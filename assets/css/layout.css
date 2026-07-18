@@ -358,8 +358,12 @@ body:has(#nav:target) {
   color: var(--secondary-dim);
 }
 
-.section {
+.section,
+.cta {
   padding: calc(var(--spacing-16) + 2.5rem) 0;
+}
+
+.section {
   background-color: var(--background);
   border-top: 1px solid var(--border);
 }
@@ -386,7 +390,6 @@ body:has(#nav:target) {
 }
 
 .cta {
-  padding: calc(var(--spacing-16) + 2.5rem) 0;
   background-color: var(--background-dark);
   position: relative;
 }
