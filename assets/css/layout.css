@@ -8,13 +8,13 @@
 }
 
 .header-inner {
-  background-color: rgba(14, 21, 18, 0.9);
+  background-color: var(--ink-alpha-90);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   background-image: radial-gradient(circle, var(--paper-alpha-10) 1px, transparent 1px);
-  background-size: 24px 24px;
-  border: 1px solid rgba(246, 243, 236, 0.08);
-  box-shadow: 0 10px 30px -12px rgba(14, 21, 18, 0.4);
+  background-size: var(--dot-bg-size);
+  border: 1px solid var(--paper-alpha-8);
+  box-shadow: 0 10px 30px -12px var(--ink-alpha-40);
   width: var(--container);
   max-width: calc(100% - var(--spacing-8));
   margin: 0 auto;
@@ -70,7 +70,7 @@
     font-family: var(--font-mono);
     font-size: 0.72rem;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: var(--letter-spacing-wide);
     color: var(--secondary-dim);
     transition: color var(--duration-fast) ease;
 
@@ -122,16 +122,12 @@ body:has(#nav:target) {
   background-color: var(--background-dark);
 
   &::after {
-    content: "";
-    position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(14,21,18,0.55) 0%, rgba(14,21,18,0.35) 40%, rgba(14,21,18,0.92) 100%);
+    background: linear-gradient(180deg, var(--ink-alpha-55) 0%, var(--ink-alpha-35) 40%, var(--ink-alpha-92) 100%);
     z-index: 1;
   }
 
   &::before {
-    content: "";
-    position: absolute;
     inset: 0;
     z-index: 1;
     background-image:
@@ -204,8 +200,7 @@ body:has(#nav:target) {
 
 .hero-copy {
   flex: 1 1 560px;
-  display: flex;
-  flex-direction: column;
+
   gap: calc(var(--spacing-5) + 0.05rem);
 
   .hero-crumb {
@@ -235,7 +230,7 @@ body:has(#nav:target) {
   font-family: var(--font-mono);
   font-size: 0.75rem;
   color: var(--primary);
-  letter-spacing: 0.05em;
+  letter-spacing: var(--letter-spacing-wide);
   display: inline-flex;
   align-items: center;
   gap: var(--spacing-2);
@@ -272,8 +267,7 @@ body:has(#nav:target) {
   font-size: 0.72rem;
   color: var(--secondary-dim);
   text-align: right;
-  display: flex;
-  flex-direction: column;
+
   gap: calc(var(--spacing-1) + 0.15rem);
   padding-bottom: calc(var(--spacing-1) + 0.15rem);
 
@@ -298,19 +292,16 @@ body:has(#nav:target) {
 .stat {
   position: relative;
   padding-left: var(--spacing-6);
-  display: flex;
-  flex-direction: column;
+
   gap: calc(var(--spacing-1) + 0.05rem);
 
   &::before {
-    content: "";
-    position: absolute;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
     width: 1px;
     height: 32px;
-    background-color: rgba(246, 243, 236, 0.22);
+    background-color: var(--paper-alpha-22);
   }
 
   &:first-child {
@@ -376,7 +367,7 @@ body:has(#nav:target) {
 .cta-block {
   background-color: var(--background-dark);
   background-image: radial-gradient(circle, var(--paper-alpha-10) 1px, transparent 1px);
-  background-size: 24px 24px;
+  background-size: var(--dot-bg-size);
   padding: var(--spacing-16) var(--spacing-10);
   color: var(--background);
   border: 1px solid var(--border-dark);
@@ -427,8 +418,7 @@ body:has(#nav:target) {
 }
 
 .footer-brand {
-  display: flex;
-  flex-direction: column;
+
   gap: calc(var(--spacing-3) + 0.15rem);
 
   p {
@@ -448,8 +438,7 @@ body:has(#nav:target) {
 }
 
 .footer-list {
-  display: flex;
-  flex-direction: column;
+
   gap: calc(var(--spacing-2) + 0.15rem);
 
   a {
@@ -517,7 +506,7 @@ body:has(#nav:target) {
     align-items: center;
     justify-content: center;
     gap: var(--spacing-10);
-    background-color: rgba(14, 21, 18, 0.95);
+    background-color: var(--ink-alpha-95);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     max-height: 0;

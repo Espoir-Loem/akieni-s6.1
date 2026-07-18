@@ -1,17 +1,33 @@
 .methodology-grid,
 .services-grid,
 .testimonials-grid,
-.contact-grid {
+.contact-grid,
+.realisations-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--spacing-6);
+}
+
+.methodology-card,
+.service-card {
+  padding: calc(var(--spacing-10) + 0.1rem) var(--spacing-8) calc(var(--spacing-8) + 0.2rem);
+
+  gap: calc(var(--spacing-3) + 0.15rem);
+}
+
+.methodology-card {
+  h3 {
+    font-size: 1.2rem;
+    color: var(--foreground);
+  }
+
 }
 
 .methodology-num,
 .service-num {
   font-family: var(--font-mono);
   font-size: 0.75rem;
-  letter-spacing: 0.05em;
+  letter-spacing: var(--letter-spacing-wide);
   display: block;
 }
 
@@ -41,6 +57,19 @@
 
   .card {
     --card-hover-border: var(--primary);
+  }
+}
+
+.service-card {
+  h3 {
+    font-size: 1.2rem;
+    color: var(--background);
+  }
+
+  p {
+    font-size: 0.93rem;
+    color: var(--secondary-dim);
+    line-height: 1.65;
   }
 }
 
@@ -85,8 +114,6 @@
 
   &::before,
   &::after {
-    content: "";
-    position: absolute;
     width: 16px;
     height: 16px;
     pointer-events: none;
@@ -116,8 +143,7 @@
 }
 
 .svc-body {
-  display: flex;
-  flex-direction: column;
+
   gap: calc(var(--spacing-3) + 0.15rem);
 
   h3 {
@@ -156,6 +182,7 @@
   flex-shrink: 0;
 }
 
+.methodology-card p,
 .svc-body p {
   font-size: 0.93rem;
   color: var(--muted);
@@ -163,8 +190,7 @@
 }
 
 .form-group {
-  display: flex;
-  flex-direction: column;
+
   gap: calc(var(--spacing-1) + 0.15rem);
 }
 
@@ -173,7 +199,7 @@
   font-size: 0.72rem;
   color: var(--secondary-dim);
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: var(--letter-spacing-wide);
 }
 
 .form-input,
@@ -209,11 +235,10 @@
 }
 
 .contact-aside {
-  display: flex;
-  flex-direction: column;
+
   gap: var(--spacing-6);
 
-  .card.service-card {
+  .service-card {
     gap: calc(var(--spacing-2) + 0.1rem);
     padding: 2.3rem;
 
@@ -236,9 +261,6 @@
 }
 
 .realisations-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--spacing-6);
   padding: 0 var(--spacing-8) var(--spacing-8);
   width: var(--container);
   max-width: calc(100% - var(--spacing-8));
@@ -271,8 +293,7 @@
 
 .realisation-body {
   padding: calc(var(--spacing-5) + 0.35rem) calc(var(--spacing-6) + 0.3rem) var(--spacing-8);
-  display: flex;
-  flex-direction: column;
+
   gap: var(--spacing-2);
 
   h3 {
@@ -290,9 +311,33 @@
 .realisation-tag {
   font-family: var(--font-mono);
   font-size: 0.7rem;
-  letter-spacing: 0.05em;
+  letter-spacing: var(--letter-spacing-wide);
   color: var(--secondary);
   text-transform: uppercase;
+}
+
+.testimonial-card {
+  padding: calc(var(--spacing-10) + 0.1rem) calc(var(--spacing-8) + 0.2rem) calc(var(--spacing-8) + 0.2rem);
+
+  gap: var(--spacing-5);
+
+  blockquote {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    line-height: 1.55;
+    color: var(--background);
+    font-style: italic;
+    font-weight: 500;
+  }
+
+  figcaption {
+    display: flex;
+    align-items: center;
+    gap: calc(var(--spacing-3) + 0.15rem);
+    padding-top: calc(var(--spacing-1) + 0.15rem);
+    border-top: 1px solid var(--border-dark);
+    margin-top: calc(var(--spacing-1) + 0.05rem);
+  }
 }
 
 .testimonial-rating {
@@ -313,8 +358,7 @@
 }
 
 .testimonial-who {
-  display: flex;
-  flex-direction: column;
+
   gap: calc(var(--spacing-1) - 0.15rem);
   font-family: var(--font-mono);
 
@@ -347,12 +391,11 @@
   padding: 0 var(--spacing-5);
   background-color: var(--background);
   background-image: radial-gradient(circle, var(--ink-alpha-6) 1px, transparent 1px);
-  background-size: 24px 24px;
+  background-size: var(--dot-bg-size);
 }
 
 .partner-name {
-  display: flex;
-  flex-direction: column;
+
   line-height: 1.25;
   text-align: center;
 
@@ -367,7 +410,7 @@
     font-family: var(--font-mono);
     font-size: 0.65rem;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: var(--letter-spacing-wide);
     color: var(--muted-faint);
   }
 }

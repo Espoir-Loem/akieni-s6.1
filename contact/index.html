@@ -40,12 +40,12 @@
         <section class="herosection herosection-sm">
             <div class="hero-inner">
                 <div class="hero-grid">
-                    <div class="hero-copy">
+                    <div class="hero-copy flex-col">
                         <span class="hero-crumb"><a href="../">Accueil</a><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg><span>Contact</span></span>
                         <h1><span class="hero-hl">Parlons</span> de la vision derrière votre produit.</h1>
                         <p class="lead">Un premier rendez-vous de 30 minutes pour comprendre votre besoin et vous dire si, et comment, on peut vous aider.</p>
                     </div>
-                    <div class="hero-meta">
+                    <div class="hero-meta flex-col">
                         <span>Email<br><strong>contact@yidi.studio</strong></span>
                         <span>Zone<br><strong>Afrique centrale &amp; au‑delà</strong></span>
                     </div>
@@ -64,17 +64,17 @@
                     <p class="section-desc">On ne commence pas par un devis, mais par un echange. Si on peut vous aider, on vous le dit. Si on n'est pas les bons, aussi.</p>
                 </header>
                 <div class="methodology-grid">
-                    <article class="card frame methodology-card">
+                    <article class="card flex-col frame methodology-card">
                         <span class="methodology-num">Projet</span>
                         <h3>Vous avez un projet</h3>
                         <p>Une idee, une app a concevoir, un produit a repenser. Vous cherchez un partenaire design pour passer de l'intention a la realisation.</p>
                     </article>
-                    <article class="card frame methodology-card">
+                    <article class="card flex-col frame methodology-card">
                         <span class="methodology-num">Doute</span>
                         <h3>Vous hesitez encore</h3>
                         <p>Vous ne savez pas si vous avez besoin d'UX, d'UI ou de strategie. On vous aide a y voir clair, sans pression.</p>
                     </article>
-                    <article class="card frame methodology-card">
+                    <article class="card flex-col frame methodology-card">
                         <span class="methodology-num">Collaboration</span>
                         <h3>Vous voulez collaborer</h3>
                         <p>Designer freelance, agence ou startup : on est ouverts aux partenariats et aux projets qui sortent de l'ordinaire.</p>
@@ -94,16 +94,16 @@
                     <p class="section-desc">Par email, par formulaire ou en rendez-vous direct a Brazzaville. On repond sous 24h.</p>
                 </header>
                 <div class="contact-grid">
-                    <form class="card dark frame service-card gap-5" action="#" method="POST">
-                        <div class="form-group">
+                    <form class="card flex-col dark frame service-card gap-5" action="#" method="POST">
+                        <div class="form-group flex-col">
                             <label for="nom" class="form-label">Nom</label>
                             <input type="text" id="nom" name="nom" placeholder="Votre nom" required class="form-input">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group flex-col">
                             <label for="email" class="form-label">Email</label>
                             <input type="email" id="email" name="email" placeholder="vous@exemple.com" required class="form-input">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group flex-col">
                             <label for="sujet" class="form-label">Sujet</label>
                             <select id="sujet" name="sujet" required class="form-select">
                                 <option value="" disabled selected>Choisissez un sujet</option>
@@ -114,24 +114,24 @@
                                 <option value="Autre">Autre</option>
                             </select>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group flex-col">
                             <label for="message" class="form-label">Message</label>
                             <textarea id="message" name="message" class="form-textarea" placeholder="Parlez-nous de votre projet..." required></textarea>
                         </div>
                         <button type="submit" class="btn btn-lg frame self-start">Envoyer le message<span class="btn-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></button>
                     </form>
-                    <aside class="contact-aside">
-                        <div class="card dark frame service-card">
+                    <aside class="contact-aside flex-col">
+                        <div class="card flex-col dark frame service-card">
                             <span class="service-num">Email</span>
                             <a href="mailto:contact@yidi.studio">contact@yidi.studio</a>
                             <p>Reponse sous 24h ouvreés</p>
                         </div>
-                        <div class="card dark frame service-card">
+                        <div class="card flex-col dark frame service-card">
                             <span class="service-num">Reseaux</span>
                             <p style="color: var(--background); font-size: 1rem; font-family: var(--font-display);">LinkedIn, Instagram, X</p>
                             <p>@yidistudio</p>
                         </div>
-                        <div class="card dark frame service-card">
+                        <div class="card flex-col dark frame service-card">
                             <span class="service-num">Adresse</span>
                             <p style="color: var(--background); font-size: 1rem; font-family: var(--font-display);">Brazzaville, Congo</p>
                             <p>Afrique centrale</p>
@@ -146,13 +146,13 @@
 
     <footer class="footer">
         <div class="container footer-grid">
-            <div class="footer-brand">
+            <div class="footer-brand flex-col">
                 <a href="../" class="logo"><span>Yidi</span></a>
                 <p>Studio de product design à Brazzaville. UX, UI design et stratégie pour des produits que vos utilisateurs comprennent vraiment.</p>
             </div>
             <div class="footer-col">
                 <h4 class="footer-heading">Navigation</h4>
-                <ul class="footer-list">
+                <ul class="footer-list flex-col">
                     <li><a href="../">Accueil</a></li>
                     <li><a href="../services">Services</a></li>
                     <li><a href="../contact">Contact</a></li>
@@ -160,7 +160,7 @@
             </div>
             <div class="footer-col">
                 <h4 class="footer-heading">Services</h4>
-                <ul class="footer-list">
+                <ul class="footer-list flex-col">
                     <li><a href="../services">UX Design</a></li>
                     <li><a href="../services">UI Design</a></li>
                     <li><a href="../services">Stratégie Business</a></li>
@@ -168,7 +168,7 @@
             </div>
             <div class="footer-col">
                 <h4 class="footer-heading">Contact</h4>
-                <ul class="footer-list">
+                <ul class="footer-list flex-col">
                     <li><a href="../contact">Nous écrire</a></li>
                     <li><a href="../contact">Démarrer un projet</a></li>
                 </ul>

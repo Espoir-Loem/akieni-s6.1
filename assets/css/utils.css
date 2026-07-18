@@ -8,6 +8,9 @@
 .text-dim { color: var(--secondary-dim); }
 .text-sm { font-size: 0.85rem; }
 .text-xs { font-size: 0.75rem; }
+.text-mono-sm { font-size: 0.72rem; }
+.text-body { font-size: 0.93rem; }
+.text-desc { font-size: 0.98rem; }
 
 .flex { display: flex; }
 .flex-col { display: flex; flex-direction: column; }

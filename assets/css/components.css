@@ -5,8 +5,6 @@
   &::after,
   & > .frame-mark-tr,
   & > .frame-mark-bl {
-    content: "";
-    position: absolute;
     width: 12px;
     height: 12px;
     pointer-events: none;
@@ -209,61 +207,6 @@
     color: var(--secondary-dim);
   }
 
-  &.service-card {
-    padding: calc(var(--spacing-10) + 0.1rem) var(--spacing-8) calc(var(--spacing-8) + 0.2rem);
-    gap: calc(var(--spacing-3) + 0.15rem);
-
-    h3 {
-      font-size: 1.2rem;
-      color: var(--background);
-    }
-
-    p {
-      font-size: 0.93rem;
-      color: var(--secondary-dim);
-      line-height: 1.65;
-    }
-  }
-
-  &.methodology-card {
-    padding: calc(var(--spacing-10) + 0.1rem) var(--spacing-8) calc(var(--spacing-8) + 0.2rem);
-    gap: calc(var(--spacing-3) + 0.15rem);
-
-    h3 {
-      font-size: 1.2rem;
-      color: var(--foreground);
-    }
-
-    p {
-      font-size: 0.93rem;
-      color: var(--muted);
-      line-height: 1.65;
-    }
-  }
-
-  &.testimonial-card {
-    padding: calc(var(--spacing-10) + 0.1rem) calc(var(--spacing-8) + 0.2rem) calc(var(--spacing-8) + 0.2rem);
-    gap: var(--spacing-5);
-
-    blockquote {
-      font-family: var(--font-display);
-      font-size: 1.15rem;
-      line-height: 1.55;
-      color: var(--background);
-      font-style: italic;
-      font-weight: 500;
-    }
-
-    figcaption {
-      display: flex;
-      align-items: center;
-      gap: calc(var(--spacing-3) + 0.15rem);
-      padding-top: calc(var(--spacing-1) + 0.15rem);
-      border-top: 1px solid var(--border-dark);
-      margin-top: calc(var(--spacing-1) + 0.05rem);
-    }
-  }
-
   &:hover {
     --bg-card: var(--paper-alpha-3);
     --card-border-color: var(--card-hover-border, var(--secondary));
@@ -272,8 +215,7 @@
   }
 
   position: relative;
-  display: flex;
-  flex-direction: column;
+
   background: var(--bg-card);
   border: 1px solid var(--card-border-color);
   transition:
@@ -281,4 +223,20 @@
     border-color var(--duration) ease,
     transform var(--duration) ease;
   z-index: 1;
+}
+
+.frame::before,
+.frame::after,
+.frame > .frame-mark-tr,
+.frame > .frame-mark-bl,
+.herosection::after,
+.herosection::before,
+.section-services::before,
+.testimonials::before,
+.cta::before,
+.stat::before,
+.svc-media::before,
+.svc-media::after {
+  content: "";
+  position: absolute;
 }

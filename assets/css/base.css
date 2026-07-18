@@ -14,14 +14,7 @@
   --primary-foreground: #0e1512;
 
   --secondary: #1f3d2b;
-  --secondary-soft: rgba(31, 61, 43, 0.08);
-  --secondary-foreground: #f6f3ec;
   --secondary-dim: rgba(246, 243, 236, 0.62);
-
-  --accent: #c1552c;
-  --accent-deep: #96401f;
-  --accent-dim: rgba(193, 85, 44, 0.12);
-  --accent-foreground: #f6f3ec;
 
   --ring: #1f3d2b;
 
@@ -40,8 +33,8 @@
   --spacing-12: 3rem;
   --spacing-16: 4rem;
 
-  --radius-sm: 2px;
-  --radius: 4px;
+  --dot-bg-size: 24px 24px;
+  --letter-spacing-wide: 0.05em;
 
   --duration-fast: 0.15s;
   --duration: 0.2s;
@@ -50,9 +43,17 @@
   --container: 72rem;
 
   --ink-alpha-6: rgba(14, 21, 18, 0.06);
+  --ink-alpha-35: rgba(14, 21, 18, 0.35);
+  --ink-alpha-40: rgba(14, 21, 18, 0.4);
+  --ink-alpha-55: rgba(14, 21, 18, 0.55);
+  --ink-alpha-90: rgba(14, 21, 18, 0.9);
+  --ink-alpha-92: rgba(14, 21, 18, 0.92);
+  --ink-alpha-95: rgba(14, 21, 18, 0.95);
   --paper-alpha-3: rgba(246, 243, 236, 0.03);
   --paper-alpha-6: rgba(246, 243, 236, 0.06);
   --paper-alpha-10: rgba(246, 243, 236, 0.1);
+  --paper-alpha-8: rgba(246, 243, 236, 0.08);
+  --paper-alpha-22: rgba(246, 243, 236, 0.22);
   --paper-alpha-40: rgba(246, 243, 236, 0.4);
 }
 
