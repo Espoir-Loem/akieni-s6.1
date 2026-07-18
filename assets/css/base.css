@@ -1,0 +1,59 @@
+:root {
+  --ink: #0e1512;
+  --ink-soft: rgba(14, 21, 18, 0.68);
+  --ink-faint: rgba(14, 21, 18, 0.42);
+  --paper: #ffffff;
+  --paper-raised: #f5f5f5;
+  --paper-line: rgba(14, 21, 18, 0.12);
+
+  --canopy: #1f3d2b;
+  --canopy-soft: rgba(31, 61, 43, 0.08);
+  --on-canopy: #f6f3ec;
+  --on-canopy-dim: rgba(246, 243, 236, 0.62);
+
+  --signal: #c9ff3d;
+  --signal-deep: #a3d930;
+  --signal-dim: rgba(201, 255, 61, 0.16);
+  --on-signal: #0e1512;
+
+  --brand: #c1552c;
+  --brand-deep: #96401f;
+  --brand-dim: rgba(193, 85, 44, 0.12);
+  --on-brand: #f6f3ec;
+
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+
+  --container: 72rem;
+  --tick: 1px solid var(--paper-line);
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--paper);
+  color: var(--ink);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+:focus-visible {
+  outline: 2px solid var(--canopy);
+  outline-offset: 3px;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
