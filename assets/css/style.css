@@ -142,6 +142,32 @@
     transition: top 0.2s ease, left 0.2s ease;
   }
 
+  .frame__mark-tr {
+    top: -1px;
+    right: -1px;
+    border-top: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    transition: top 0.2s ease, right 0.2s ease;
+  }
+
+  .frame__mark-bl {
+    bottom: -1px;
+    left: -1px;
+    border-bottom: 2px solid currentColor;
+    border-left: 2px solid currentColor;
+    transition: bottom 0.2s ease, left 0.2s ease;
+  }
+
+  .frame:hover .frame__mark-tr {
+    top: 3px;
+    right: 3px;
+  }
+
+  .frame:hover .frame__mark-bl {
+    bottom: 3px;
+    left: 3px;
+  }
+
   .frame::after {
     bottom: -1px;
     right: -1px;
@@ -1171,37 +1197,62 @@
     gap: 1rem;
   }
 
-  .partner__card {
+  .partner__logo {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    min-height: 100px;
-    padding: 1.2rem 1.5rem;
+    justify-content: center;
+    gap: 0.7rem;
+    height: 120px;
+    padding: 0 1.4rem;
+    background-color: #ffffff;
     background-image: radial-gradient(circle, rgba(14, 21, 18, 0.06) 1px, transparent 1px);
     background-size: 24px 24px;
   }
 
-  .partner__init {
+  .partner__mark {
+    width: 2.1rem;
+    height: 2.1rem;
+    flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 2.4rem;
-    height: 2.4rem;
-    flex-shrink: 0;
-    background-color: var(--ink);
-    color: var(--paper);
     font-family: var(--font-display);
     font-weight: 700;
-    font-size: 0.85rem;
-    border-radius: 4px;
+    font-size: 0.95rem;
+    color: var(--on-signal);
+    background-color: var(--signal);
+  }
+
+  .partner__logo:nth-child(3n+2) .partner__mark {
+    background-color: var(--canopy);
+    color: var(--paper);
+  }
+
+  .partner__logo:nth-child(3n) .partner__mark {
+    background-color: var(--ink);
+    color: var(--paper);
   }
 
   .partner__name {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.25;
+    text-align: center;
+  }
+
+  .partner__name strong {
     font-family: var(--font-display);
-    font-size: 0.95rem;
+    font-size: 0.92rem;
     font-weight: 600;
     color: var(--ink);
-    line-height: 1.2;
+  }
+
+  .partner__name span {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--ink-faint);
   }
 
   /* ---------- cta ---------- */
@@ -1473,6 +1524,10 @@
   @media (max-width: 540px) {
     .cta__block {
       padding: 2.5rem 1.5rem;
+    }
+
+    .partners__grid {
+      grid-template-columns: repeat(2, 1fr);
     }
 
     .realisations__grid {
