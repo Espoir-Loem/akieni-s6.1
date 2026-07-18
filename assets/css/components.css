@@ -215,8 +215,16 @@
 
   &:hover {
     background-color: var(--paper-alpha-3);
-    border-color: var(--secondary);
+    border-color: var(--card-hover-border, var(--secondary));
     border-style: dashed;
     transform: translateY(-2px);
   }
+}
+
+.card--dark {
+  background-color: var(--background-dark);
+  background-image: radial-gradient(circle, var(--paper-alpha-10) 1px, transparent 1px);
+  background-size: 24px 24px;
+  border-color: var(--border-dark);
+  color: var(--secondary-dim);
 }

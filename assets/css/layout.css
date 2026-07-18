@@ -195,27 +195,6 @@ body:has(#nav:target) {
   padding: 0 var(--spacing-6);
 }
 
-.hero__coords {
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--primary);
-  margin-bottom: calc(var(--spacing-5) + 0.15rem);
-  display: flex;
-  align-items: center;
-  gap: calc(var(--spacing-2) + 0.1rem);
-
-  &::before {
-    content: "";
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background-color: var(--primary);
-    box-shadow: 0 0 0 4px rgba(201,255,61,0.18);
-  }
-}
-
 .hero__grid {
   display: flex;
   align-items: flex-end;
@@ -374,8 +353,8 @@ body:has(#nav:target) {
 }
 
 .section__title {
-  font-size: clamp(1.8rem, 3.2vw, 2.5rem);
-  color: var(--foreground);
+  font-size: var(--title-size, clamp(1.8rem, 3.2vw, 2.5rem));
+  color: var(--title-color, var(--foreground));
 }
 
 .section__desc {
@@ -428,7 +407,8 @@ body:has(#nav:target) {
 }
 
 .cta__title {
-  font-size: clamp(1.6rem, 3.2vw, 2.3rem);
+  --title-size: clamp(1.6rem, 3.2vw, 2.3rem);
+  font-size: var(--title-size);
 }
 
 .cta__desc {

@@ -56,10 +56,6 @@
   --paper-alpha-40: rgba(246, 243, 236, 0.4);
 }
 
-.tick {
-  border-top: 1px solid var(--border);
-}
-
 body {
   font-family: var(--font-sans);
   background-color: var(--background);

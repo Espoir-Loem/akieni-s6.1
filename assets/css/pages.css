@@ -55,19 +55,12 @@
     color: var(--secondary-dim);
   }
 
-  .card:hover {
-    background-color: var(--paper-alpha-3);
-    border-color: var(--primary);
+  .card {
+    --card-hover-border: var(--primary);
   }
 }
 
 .service__card {
-  background-color: var(--background-dark);
-  background-image: radial-gradient(circle, var(--paper-alpha-10) 1px, transparent 1px);
-  background-size: 24px 24px;
-  border-color: var(--border-dark);
-  color: var(--secondary-dim);
-
   h3 {
     font-size: 1.2rem;
     color: var(--background);
@@ -82,29 +75,6 @@
 
 .service__num {
   color: var(--primary);
-}
-
-.service__detail {
-  padding: var(--spacing-8);
-
-  ul {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-2);
-    margin-top: var(--spacing-2);
-  }
-
-  li {
-    font-size: 0.85rem;
-    color: var(--secondary-dim);
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-2);
-
-    &::before {
-      background: var(--primary);
-    }
-  }
 }
 
 .svc {
@@ -213,7 +183,6 @@
   }
 }
 
-.service__detail li::before,
 .svc__body li::before {
   content: "";
   width: 4px;
@@ -361,22 +330,11 @@
   text-transform: uppercase;
 }
 
-.testimonials {
-  .card:hover {
-    background-color: var(--paper-alpha-3);
-  }
-}
-
 .testimonial__card {
   padding: calc(var(--spacing-10) + 0.1rem) calc(var(--spacing-8) + 0.2rem) calc(var(--spacing-8) + 0.2rem);
   display: flex;
   flex-direction: column;
   gap: var(--spacing-5);
-  background-color: var(--background-dark);
-  background-image: radial-gradient(circle, var(--paper-alpha-10) 1px, transparent 1px);
-  background-size: 24px 24px;
-  border-color: var(--border-dark);
-  color: var(--secondary-dim);
 
   blockquote {
     font-family: var(--font-display);
@@ -450,30 +408,6 @@
   background-color: var(--background);
   background-image: radial-gradient(circle, var(--ink-alpha-6) 1px, transparent 1px);
   background-size: 24px 24px;
-}
-
-.partner__mark {
-  width: 2.1rem;
-  height: 2.1rem;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 0.95rem;
-  color: var(--primary-foreground);
-  background-color: var(--primary);
-
-  .partner__logo:nth-child(3n+2) & {
-    background-color: var(--secondary);
-    color: var(--background);
-  }
-
-  .partner__logo:nth-child(3n) & {
-    background-color: var(--foreground);
-    color: var(--background);
-  }
 }
 
 .partner__name {
