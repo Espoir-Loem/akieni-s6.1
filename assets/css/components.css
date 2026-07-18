@@ -200,28 +200,85 @@
 }
 
 .card {
+  --bg-card: radial-gradient(circle, var(--ink-alpha-6) 1px, transparent 1px) 0 0 / 24px 24px, var(--background);
+  --card-border-color: var(--border);
+
+  &.dark {
+    --bg-card: radial-gradient(circle, var(--paper-alpha-10) 1px, transparent 1px) 0 0 / 24px 24px, var(--background-dark);
+    --card-border-color: var(--border-dark);
+    color: var(--secondary-dim);
+  }
+
+  &.service-card {
+    padding: calc(var(--spacing-10) + 0.1rem) var(--spacing-8) calc(var(--spacing-8) + 0.2rem);
+    gap: calc(var(--spacing-3) + 0.15rem);
+
+    h3 {
+      font-size: 1.2rem;
+      color: var(--background);
+    }
+
+    p {
+      font-size: 0.93rem;
+      color: var(--secondary-dim);
+      line-height: 1.65;
+    }
+  }
+
+  &.methodology-card {
+    padding: calc(var(--spacing-10) + 0.1rem) var(--spacing-8) calc(var(--spacing-8) + 0.2rem);
+    gap: calc(var(--spacing-3) + 0.15rem);
+
+    h3 {
+      font-size: 1.2rem;
+      color: var(--foreground);
+    }
+
+    p {
+      font-size: 0.93rem;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+  }
+
+  &.testimonial-card {
+    padding: calc(var(--spacing-10) + 0.1rem) calc(var(--spacing-8) + 0.2rem) calc(var(--spacing-8) + 0.2rem);
+    gap: var(--spacing-5);
+
+    blockquote {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      line-height: 1.55;
+      color: var(--background);
+      font-style: italic;
+      font-weight: 500;
+    }
+
+    figcaption {
+      display: flex;
+      align-items: center;
+      gap: calc(var(--spacing-3) + 0.15rem);
+      padding-top: calc(var(--spacing-1) + 0.15rem);
+      border-top: 1px solid var(--border-dark);
+      margin-top: calc(var(--spacing-1) + 0.05rem);
+    }
+  }
+
+  &:hover {
+    --bg-card: var(--paper-alpha-3);
+    --card-border-color: var(--card-hover-border, var(--secondary));
+    border-style: dashed;
+    transform: translateY(-2px);
+  }
+
   position: relative;
   display: flex;
   flex-direction: column;
-  --bg-card: radial-gradient(circle, var(--ink-alpha-6) 1px, transparent 1px) 0 0 / 24px 24px, var(--background);
   background: var(--bg-card);
-  border: 1px solid var(--border);
+  border: 1px solid var(--card-border-color);
   transition:
     background-color var(--duration) ease,
     border-color var(--duration) ease,
     transform var(--duration) ease;
   z-index: 1;
-
-  &:hover {
-    background-color: var(--paper-alpha-3);
-    border-color: var(--card-hover-border, var(--secondary));
-    border-style: dashed;
-    transform: translateY(-2px);
-  }
-
-  &.dark {
-    --bg-card: radial-gradient(circle, var(--paper-alpha-10) 1px, transparent 1px) 0 0 / 24px 24px, var(--background-dark);
-    border-color: var(--border-dark);
-    color: var(--secondary-dim);
-  }
 }

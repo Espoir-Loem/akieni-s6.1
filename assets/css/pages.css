@@ -7,22 +7,6 @@
   gap: var(--spacing-6);
 }
 
-.methodology-card,
-.service-card {
-  padding: calc(var(--spacing-10) + 0.1rem) var(--spacing-8) calc(var(--spacing-8) + 0.2rem);
-  display: flex;
-  flex-direction: column;
-  gap: calc(var(--spacing-3) + 0.15rem);
-}
-
-.methodology-card {
-  h3 {
-    font-size: 1.2rem;
-    color: var(--foreground);
-  }
-
-}
-
 .methodology-num,
 .service-num {
   font-family: var(--font-mono);
@@ -57,19 +41,6 @@
 
   .card {
     --card-hover-border: var(--primary);
-  }
-}
-
-.service-card {
-  h3 {
-    font-size: 1.2rem;
-    color: var(--background);
-  }
-
-  p {
-    font-size: 0.93rem;
-    color: var(--secondary-dim);
-    line-height: 1.65;
   }
 }
 
@@ -185,7 +156,6 @@
   flex-shrink: 0;
 }
 
-.methodology-card p,
 .svc-body p {
   font-size: 0.93rem;
   color: var(--muted);
@@ -243,7 +213,7 @@
   flex-direction: column;
   gap: var(--spacing-6);
 
-  .service-card {
+  .card.service-card {
     gap: calc(var(--spacing-2) + 0.1rem);
     padding: 2.3rem;
 
@@ -323,31 +293,6 @@
   letter-spacing: 0.05em;
   color: var(--secondary);
   text-transform: uppercase;
-}
-
-.testimonial-card {
-  padding: calc(var(--spacing-10) + 0.1rem) calc(var(--spacing-8) + 0.2rem) calc(var(--spacing-8) + 0.2rem);
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-5);
-
-  blockquote {
-    font-family: var(--font-display);
-    font-size: 1.15rem;
-    line-height: 1.55;
-    color: var(--background);
-    font-style: italic;
-    font-weight: 500;
-  }
-
-  figcaption {
-    display: flex;
-    align-items: center;
-    gap: calc(var(--spacing-3) + 0.15rem);
-    padding-top: calc(var(--spacing-1) + 0.15rem);
-    border-top: 1px solid var(--border-dark);
-    margin-top: calc(var(--spacing-1) + 0.05rem);
-  }
 }
 
 .testimonial-rating {
