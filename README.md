@@ -1,74 +1,76 @@
-# PROJET 6.1 : Site vitrine 3 pages (simple) DÉBUTANT
+# Yidi — Site vitrine (Projet 6.1)
 
-## Description
+Site vitrine 3 pages pour **Yidi**, studio de product design basé à Brazzaville.
+Projet réalisé dans le cadre du programme **Akieni Academy — Phase 2** (HTML, CSS & Git).
 
-Créer le site d'une entreprise locale congolaise (3 pages minimum).
+**Durée :** 6–7 heures
 
-**Durée estimée :** 6-7 heures
-
-**Entreprise :** Yidi — Studio de Product Design (UI/UX & stratégie), Brazzaville
+---
 
 ## Pages
 
-1. **Accueil** (`index.html`) — Hero + présentation courte, services, portfolio, témoignages, partenaires
-2. **Services** (`services/`) — 3-4 prestations détaillées (UI Design, UX Research, Stratégie Produit)
-3. **Contact** (`contact/`) — Formulaire de contact + coordonnées
+| Page | Fichier | Contenu |
+|------|---------|---------|
+| Accueil | `index.html` | Hero, présentation, services, portfolio, témoignages, partenaires |
+| Services | `services/index.html` | UI Design, UX Research, Stratégie Produit — 3 prestations détaillées |
+| Contact | `contact/index.html` | Formulaire de contact, email, adresse, réseaux |
 
-## Éléments
+## Fonctionnalités
 
-- Logo et branding cohérent
-- Navigation fonctionnelle
-- Hero section attractive
-- Cards pour services
-- Formulaire contact
-- Footer avec infos
-- Responsive 2 breakpoints
+- Logo et identité visuelle cohérente
+- Navigation fonctionnelle avec `aria-current`
+- Hero section avec image de fond
+- Cards pour les services et réalisations
+- Formulaire de contact fonctionnel
+- Footer complet (liens, copyright, réseaux)
+- Design responsive (2 breakpoints)
 
-## Structure HTML/CSS
+## Stack technique
 
-- HTML5 sémantique
-- CSS organisé
-- Flexbox/Grid basique
-- Images optimisées
-- Couleurs cohérentes
+| Technologie | Usage |
+|-------------|-------|
+| HTML5 | Structure sémantique (header, main, section, footer, nav) |
+| CSS3 | Design system, Flexbox, Grid, variables CSS |
+| Google Fonts | Fraunces, Inter, JetBrains Mono |
+| Aucune dépendance | Pas de framework ni de bibliothèque externe |
 
 ## Design system
 
 - **Palette :** `--ink` (#0e1512), `--paper` (#ffffff), `--signal` (#c9ff3d), `--canopy` (#1f3d2b)
-- **Typographies :** Fraunces (titres), Inter (corps), JetBrains Mono (éléments techniques)
-- **Signature visuelle :** Coins crop-mark (`frame`), motifs pointillés, étiquettes numérotées
-
-## Lancer en local
-
-Aucune dépendance. Ouvrir `index.html` dans un navigateur.
-
-## Déploiement GitHub Pages
-
-1. Pusher le dépôt sur GitHub
-2. Settings → Pages → Deploy from branch `main`, dossier `/ (root)`
-
-## Critères
-
-- [x] 3 pages HTML valides
-- [x] Navigation fonctionne
-- [x] Design cohérent
-- [x] Responsive (mobile + desktop)
-- [x] 10+ commits Git
-- [x] README avec instructions
-- [x] Déployé sur GitHub Pages
+- **Typographie :** Fraunces (titres), Inter (corps), JetBrains Mono (monospace)
+- **Signature visuelle :** Coins crop-mark (`.frame`), motifs pointillés, étiquettes numérotées
 
 ## Structure du projet
 
 ```
 ├── index.html
-├── services/
-│   └── index.html
-├── contact/
-│   └── index.html
+├── services/index.html
+├── contact/index.html
 ├── assets/
-│   ├── css/style.css
+│   ├── css/
+│   │   └── style.css
 │   └── images/
 │       ├── home/
 │       └── services/
 └── README.md
 ```
+
+## Lancer en local
+
+Aucune dépendance. Ouvrir `index.html` dans un navigateur.
+
+## Déploiement (GitHub Pages)
+
+1. Pousser le dépôt sur GitHub
+2. **Settings → Pages** : Deploy from branch `main`, dossier `/ (root)`
+3. Le site est accessible à l'URL fournie par GitHub Pages
+
+## Critères de validation
+
+- [x] 3 pages HTML valides
+- [x] Navigation fonctionnelle entre les pages
+- [x] Design cohérent (couleurs, typographie, espacement)
+- [x] Responsive mobile + desktop
+- [x] 10+ commits Git
+- [x] README documenté
+- [x] Déploiement GitHub Pages actif
