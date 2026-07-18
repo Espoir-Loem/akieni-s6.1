@@ -88,3 +88,42 @@ h3 {
   margin-inline: auto;
   padding-inline: var(--spacing-6);
 }
+
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-old(root) {
+  animation: 0.5s cubic-bezier(0.4, 0, 0.2, 1) both vt-scale-out;
+}
+
+::view-transition-new(root) {
+  animation: 0.5s cubic-bezier(0.4, 0, 0.2, 1) both vt-scale-in;
+  mix-blend-mode: normal;
+}
+
+@keyframes vt-scale-out {
+  to {
+    transform: scale(0.92);
+    filter: blur(8px);
+    opacity: 0;
+  }
+}
+
+@keyframes vt-scale-in {
+  from {
+    transform: scale(1.08);
+    filter: blur(10px);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  main {
+    animation: fade-in 0.45s ease both;
+  }
+}
