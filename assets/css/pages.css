@@ -383,27 +383,35 @@
 }
 
 .partner-logo {
+  --strong-color: var(--foreground);
+  --tag-color: var(--muted-faint);
+  min-height: 140px;
+  padding: 2rem 1.4rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   gap: calc(var(--spacing-3) - 0.05rem);
-  height: 120px;
-  padding: 0 var(--spacing-5);
-  background-color: var(--background);
   background-image: radial-gradient(circle, var(--ink-alpha-6) 1px, transparent 1px);
   background-size: var(--dot-bg-size);
 }
 
-.partner-name {
+.partner-bg-secondary { background-color: var(--secondary); color: var(--background); --strong-color: var(--background); --tag-color: var(--primary); }
+.partner-bg-foreground { background-color: var(--foreground); color: var(--background); --strong-color: var(--background); --tag-color: var(--primary); }
+.partner-bg-primary { background-color: var(--primary); color: var(--background); --strong-color: var(--foreground); --tag-color: var(--secondary); }
+.partner-bg-primary-deep { background-color: var(--primary-deep); color: var(--background); --strong-color: var(--foreground); --tag-color: var(--secondary); }
 
+.partner-tag-primary-deep { --tag-color: var(--primary-deep); }
+
+.partner-name {
   line-height: 1.25;
-  text-align: center;
 
   strong {
     font-family: var(--font-display);
     font-size: 0.92rem;
     font-weight: 600;
-    color: var(--foreground);
+    color: var(--strong-color);
   }
 
   span {
@@ -411,8 +419,14 @@
     font-size: 0.65rem;
     text-transform: uppercase;
     letter-spacing: var(--letter-spacing-wide);
-    color: var(--muted-faint);
+    color: var(--tag-color);
   }
+}
+
+.contact-highlight {
+  color: var(--background);
+  font-size: 1rem;
+  font-family: var(--font-display);
 }
 
 @media (min-width: 780px) {
