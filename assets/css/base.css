@@ -35,6 +35,8 @@
 
   --dot-bg-size: 24px 24px;
   --letter-spacing-wide: 0.05em;
+  --gap-card: calc(var(--spacing-3) + 0.15rem);
+  --gap-xs: calc(var(--spacing-1) + 0.15rem);
 
   --duration-fast: 0.15s;
   --duration: 0.2s;
@@ -55,6 +57,7 @@
   --paper-alpha-8: rgba(246, 243, 236, 0.08);
   --paper-alpha-22: rgba(246, 243, 236, 0.22);
   --paper-alpha-40: rgba(246, 243, 236, 0.4);
+  --grid-line: #0c131071;
 }
 
 body {

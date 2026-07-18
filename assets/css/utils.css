@@ -2,7 +2,7 @@
 .font-display { font-family: var(--font-display); }
 .font-sans { font-family: var(--font-sans); }
 
-.text-uppercase { text-transform: uppercase; }
+.uppercase { text-transform: uppercase; }
 .text-center { text-align: center; }
 .text-muted { color: var(--muted); }
 .text-dim { color: var(--secondary-dim); }
@@ -11,6 +11,12 @@
 .text-mono-sm { font-size: 0.72rem; }
 .text-body { font-size: 0.93rem; }
 .text-desc { font-size: 0.98rem; }
+
+.label-mono {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+}
 
 .flex { display: flex; }
 .flex-col { display: flex; flex-direction: column; }
@@ -21,6 +27,36 @@
 .justify-between { justify-content: space-between; }
 .justify-center { justify-content: center; }
 .self-start { align-self: flex-start; }
+
+.block { display: block; }
+.hidden { display: none; }
+.shrink-0 { flex-shrink: 0; }
+.overflow-hidden { overflow: hidden; }
+.fixed { position: fixed; }
+.inset-0 { inset: 0; }
+.top-0 { top: 0; }
+.left-0 { left: 0; }
+.z-1 { z-index: 1; }
+.pointer-events-none { pointer-events: none; }
+.cursor-pointer { cursor: pointer; }
+
+.font-semibold { font-weight: 600; }
+.font-medium { font-weight: 500; }
+.italic { font-style: italic; }
+
+.backdrop-blur {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.center-y {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.text-base {
+  font-size: 0.9rem;
+}
 
 .gap-1 { gap: var(--spacing-1); }
 .gap-2 { gap: var(--spacing-2); }
@@ -34,6 +70,31 @@
 
 .w-full { width: 100%; }
 .h-full { height: 100%; }
+
+.media-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bg-dot-paper {
+  background-image: radial-gradient(circle, var(--paper-alpha-10) 1px, transparent 1px);
+  background-size: var(--dot-bg-size);
+  background-position: 0 0;
+}
+
+.bg-dot-ink {
+  background-image: radial-gradient(circle, var(--ink-alpha-6) 1px, transparent 1px);
+  background-size: var(--dot-bg-size);
+  background-position: 0 0;
+}
+
+.bg-grid {
+  background-image:
+    repeating-linear-gradient(to right, var(--grid-line) 0 1px, transparent 1px 8px),
+    repeating-linear-gradient(to bottom, var(--grid-line) 0 1px, transparent 1px 8px);
+  background-position: 0 0;
+}
 
 .relative { position: relative; }
 .absolute { position: absolute; }

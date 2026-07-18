@@ -14,10 +14,10 @@
 
 <body>
 
-    <header class="header">
-        <div class="header-inner">
+    <header class="header fixed top-0 left-0">
+        <div class="header-inner bg-grid backdrop-blur">
             <a href="../" class="logo">Yidi<span>.</span></a>
-            <a href="#nav" class="nav-burger" aria-label="Menu">
+            <a href="#nav" class="nav-burger cursor-pointer" aria-label="Menu">
                 <span></span><span></span><span></span>
             </a>
             <a href="#" class="nav-close" aria-label="Fermer">
@@ -26,7 +26,7 @@
                 </svg>
             </a>
             <nav id="nav" class="nav" aria-label="Navigation principale">
-                <ul class="nav-list">
+                <ul class="nav-list label-mono">
                     <li><a href="../">Accueil</a></li>
                     <li><a href="../services">Services</a></li>
                     <li><a href="../contact" aria-current="page">Contact</a></li>
@@ -37,7 +37,7 @@
     </header>
 
     <main>
-        <section class="herosection herosection-sm">
+        <section class="herosection herosection-sm overflow-hidden">
             <div class="hero-inner">
                 <div class="hero-grid">
                     <div class="hero-copy flex-col">
@@ -96,16 +96,16 @@
                 <div class="contact-grid">
                     <form class="card flex-col dark frame service-card gap-5" action="#" method="POST">
                         <div class="form-group flex-col">
-                            <label for="nom" class="form-label">Nom</label>
-                            <input type="text" id="nom" name="nom" placeholder="Votre nom" required class="form-input">
+                            <label for="nom" class="form-label label-mono">Nom</label>
+                            <input type="text" id="nom" name="nom" placeholder="Votre nom" required class="form-input text-base">
                         </div>
                         <div class="form-group flex-col">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" id="email" name="email" placeholder="vous@exemple.com" required class="form-input">
+                            <label for="email" class="form-label label-mono">Email</label>
+                            <input type="email" id="email" name="email" placeholder="vous@exemple.com" required class="form-input text-base">
                         </div>
                         <div class="form-group flex-col">
-                            <label for="sujet" class="form-label">Sujet</label>
-                            <select id="sujet" name="sujet" required class="form-select">
+                            <label for="sujet" class="form-label label-mono">Sujet</label>
+                            <select id="sujet" name="sujet" required class="form-select text-base">
                                 <option value="" disabled selected>Choisissez un sujet</option>
                                 <option value="UX Design">UX Design</option>
                                 <option value="UI Design">UI Design</option>
@@ -115,10 +115,10 @@
                             </select>
                         </div>
                         <div class="form-group flex-col">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea id="message" name="message" class="form-textarea" placeholder="Parlez-nous de votre projet..." required></textarea>
+                            <label for="message" class="form-label label-mono">Message</label>
+                            <textarea id="message" name="message" class="form-textarea text-base" placeholder="Parlez-nous de votre projet..." required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-lg frame self-start">Envoyer le message<span class="btn-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></button>
+                        <button type="submit" class="btn btn-lg text-base frame self-start">Envoyer le message<span class="btn-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></button>
                     </form>
                     <aside class="contact-aside flex-col">
                         <div class="card flex-col dark frame service-card">
@@ -147,7 +147,7 @@
     <footer class="footer">
         <div class="container footer-grid">
             <div class="footer-brand flex-col">
-                <a href="../" class="logo"><span>Yidi</span></a>
+                <a href="../" class="logo">Yidi<span>.</span></a>
                 <p>Studio de product design à Brazzaville. UX, UI design et stratégie pour des produits que vos utilisateurs comprennent vraiment.</p>
             </div>
             <div class="footer-col">
@@ -174,7 +174,7 @@
                 </ul>
             </div>
         </div>
-        <div class="container footer-bottom flex flex-wrap gap-4 justify-between font-mono text-muted text-uppercase">
+        <div class="container footer-bottom flex flex-wrap gap-4 justify-between font-mono text-muted uppercase">
             <p>&copy; 2026 Espoir LOEMBA. Tous droits réservés.</p>
             <p>Product design depuis Brazzaville</p>
         </div>

@@ -12,7 +12,7 @@
 .service-card {
   padding: calc(var(--spacing-10) + 0.1rem) var(--spacing-8) calc(var(--spacing-8) + 0.2rem);
 
-  gap: calc(var(--spacing-3) + 0.15rem);
+  gap: var(--gap-card);
 }
 
 .methodology-card {
@@ -95,21 +95,22 @@
   }
 }
 
-.svc-row--alt {
-  .svc-media {
-    grid-column: 2;
-    grid-row: 1;
-  }
+.svc-row-alt {
+  @media (min-width: 780px) {
+    .svc-media {
+      grid-column: 2;
+      grid-row: 1;
+    }
 
-  .svc-body {
-    grid-column: 1;
-    grid-row: 1;
+    .svc-body {
+      grid-column: 1;
+      grid-row: 1;
+    }
   }
 }
 
 .svc-media {
   height: 400px;
-  overflow: hidden;
   position: relative;
 
   &::before,
@@ -135,16 +136,13 @@
   }
 
   img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
     display: block;
   }
 }
 
 .svc-body {
 
-  gap: calc(var(--spacing-3) + 0.15rem);
+  gap: var(--gap-card);
 
   h3 {
     font-size: 1.3rem;
@@ -191,15 +189,12 @@
 
 .form-group {
 
-  gap: calc(var(--spacing-1) + 0.15rem);
+  gap: var(--gap-xs);
 }
 
 .form-label {
-  font-family: var(--font-mono);
   font-size: 0.72rem;
   color: var(--secondary-dim);
-  text-transform: uppercase;
-  letter-spacing: var(--letter-spacing-wide);
 }
 
 .form-input,
@@ -210,7 +205,6 @@
   border: 1px solid var(--border-dark);
   color: var(--background);
   font-family: var(--font-sans);
-  font-size: 0.9rem;
   outline: none;
   transition: border-color var(--duration) ease;
 
@@ -278,9 +272,6 @@
   border-bottom: 1px solid var(--border);
 
   img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
     filter: grayscale(0.15);
     transition: filter var(--duration-slow) ease, transform 0.4s ease;
   }
@@ -309,11 +300,8 @@
 }
 
 .realisation-tag {
-  font-family: var(--font-mono);
   font-size: 0.7rem;
-  letter-spacing: var(--letter-spacing-wide);
   color: var(--secondary);
-  text-transform: uppercase;
 }
 
 .testimonial-card {
@@ -334,9 +322,9 @@
     display: flex;
     align-items: center;
     gap: calc(var(--spacing-3) + 0.15rem);
-    padding-top: calc(var(--spacing-1) + 0.15rem);
+    padding-top: var(--spacing-4);
     border-top: 1px solid var(--border-dark);
-    margin-top: calc(var(--spacing-1) + 0.05rem);
+    margin-top: var(--spacing-3);
   }
 }
 
@@ -393,16 +381,39 @@
   justify-content: center;
   text-align: center;
   gap: calc(var(--spacing-3) - 0.05rem);
-  background-image: radial-gradient(circle, var(--ink-alpha-6) 1px, transparent 1px);
-  background-size: var(--dot-bg-size);
 }
 
-.partner-bg-secondary { background-color: var(--secondary); color: var(--background); --strong-color: var(--background); --tag-color: var(--primary); }
-.partner-bg-foreground { background-color: var(--foreground); color: var(--background); --strong-color: var(--background); --tag-color: var(--primary); }
-.partner-bg-primary { background-color: var(--primary); color: var(--background); --strong-color: var(--foreground); --tag-color: var(--secondary); }
-.partner-bg-primary-deep { background-color: var(--primary-deep); color: var(--background); --strong-color: var(--foreground); --tag-color: var(--secondary); }
+.partner-bg-secondary {
+  background-color: var(--secondary);
+  color: var(--background);
+  --strong-color: var(--background);
+  --tag-color: var(--primary);
+}
 
-.partner-tag-primary-deep { --tag-color: var(--primary-deep); }
+.partner-bg-foreground {
+  background-color: var(--foreground);
+  color: var(--background);
+  --strong-color: var(--background);
+  --tag-color: var(--primary);
+}
+
+.partner-bg-primary {
+  background-color: var(--primary);
+  color: var(--background);
+  --strong-color: var(--foreground);
+  --tag-color: var(--secondary);
+}
+
+.partner-bg-primary-deep {
+  background-color: var(--primary-deep);
+  color: var(--background);
+  --strong-color: var(--foreground);
+  --tag-color: var(--secondary);
+}
+
+.partner-tag-primary-deep {
+  --tag-color: var(--primary-deep);
+}
 
 .partner-name {
   line-height: 1.25;
@@ -443,7 +454,7 @@
   }
 
   .testimonials-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .partners-grid {

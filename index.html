@@ -14,10 +14,10 @@
 
 <body>
 
-    <header class="header">
-        <div class="header-inner">
-            <a href="index.html" class="logo">Yidi<span>.</span></a>
-            <a href="#nav" class="nav-burger" aria-label="Menu">
+    <header class="header fixed top-0 left-0">
+        <div class="header-inner bg-grid backdrop-blur">
+            <a href="" class="logo">Yidi<span>.</span></a>
+            <a href="#nav" class="nav-burger cursor-pointer" aria-label="Menu">
                 <span></span><span></span><span></span>
             </a>
             <a href="#" class="nav-close" aria-label="Fermer">
@@ -26,8 +26,8 @@
                 </svg>
             </a>
             <nav id="nav" class="nav" aria-label="Navigation principale">
-                <ul class="nav-list">
-                    <li><a href="index.html" aria-current="page">Accueil</a></li>
+                <ul class="nav-list label-mono">
+                    <li><a href="" aria-current="page">Accueil</a></li>
                     <li><a href="services">Services</a></li>
                     <li><a href="contact">Contact</a></li>
                 </ul>
@@ -37,15 +37,15 @@
     </header>
 
     <main>
-        <section class="herosection">
-            <img class="hero-bg" src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=1400&q=90" alt="UI UX design">
+        <section class="herosection overflow-hidden">
+            <img class="hero-bg media-cover" src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=1400&q=90" alt="UI UX design">
             <div class="hero-inner">
                 <div class="hero-grid">
                     <div class="hero-copy flex-col">
                         <h1>Le design comme <em>preuve</em>, pas comme décor.</h1>
                         <p class="lead">Du wireframe à l'interface livrée, nous concevons des produits que vos utilisateurs comprennent au premier regard et que vos chiffres confirment.</p>
                         <div class="hero-actions">
-                            <a href="contact#form" class="btn btn-lg frame">Lancer votre projet<span class="btn-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
+                            <a href="contact#form" class="btn btn-lg text-base frame">Lancer votre projet<span class="btn-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
                         </div>
                     </div>
                     <div class="hero-meta flex-col">
@@ -149,60 +149,60 @@
             <div class="realisations-grid">
                 <article class="card flex-col frame realisation-card">
                     <div class="realisation-thumb">
-                        <img src="./assets/images/home/banking-app.jpg" alt="Banking App project">
+                        <img class="media-cover" src="./assets/images/home/banking-app.jpg" alt="Banking App project">
                     </div>
                     <div class="realisation-body">
-                        <span class="realisation-tag">Fintech Maquette</span>
+                        <span class="realisation-tag label-mono">Fintech Maquette</span>
                         <h3>Banking App</h3>
                         <p>UX research & UI design pour une application bancaire mobile en Afrique centrale.</p>
                     </div>
                 </article>
                 <article class="card flex-col frame realisation-card">
                     <div class="realisation-thumb">
-                        <img src="./assets/images/home/marketplace.jpg" alt="Marketplace project">
+                        <img class="media-cover" src="./assets/images/home/marketplace.jpg" alt="Marketplace project">
                     </div>
                     <div class="realisation-body">
-                        <span class="realisation-tag">E-commerce Maquette</span>
+                        <span class="realisation-tag label-mono">E-commerce Maquette</span>
                         <h3>Marketplace</h3>
                         <p>Design system complet et refonte UX pour une plateforme de vente en ligne.</p>
                     </div>
                 </article>
                 <article class="card flex-col frame realisation-card">
                     <div class="realisation-thumb">
-                        <img src="./assets/images/home/health-portal.jpg" alt="Health Portal project">
+                        <img class="media-cover" src="./assets/images/home/health-portal.jpg" alt="Health Portal project">
                     </div>
                     <div class="realisation-body">
-                        <span class="realisation-tag">Santé Maquette</span>
+                        <span class="realisation-tag label-mono">Santé Maquette</span>
                         <h3>Health Portal</h3>
                         <p>Stratégie produit et design d'interface pour un portail de télémédecine.</p>
                     </div>
                 </article>
                 <article class="card flex-col frame realisation-card">
                     <div class="realisation-thumb">
-                        <img src="./assets/images/home/edtech-platform.jpg" alt="Edtech Platform wireframe">
+                        <img class="media-cover" src="./assets/images/home/edtech-platform.jpg" alt="Edtech Platform wireframe">
                     </div>
                     <div class="realisation-body">
-                        <span class="realisation-tag">Éducation Wireframe</span>
+                        <span class="realisation-tag label-mono">Éducation Wireframe</span>
                         <h3>Edtech Platform</h3>
                         <p>Architecture d'information & wireframes pour une plateforme d'apprentissage en ligne.</p>
                     </div>
                 </article>
                 <article class="card flex-col frame realisation-card">
                     <div class="realisation-thumb">
-                        <img src="./assets/images/home/fleet-manager.jpg" alt="Fleet Manager wireframe">
+                        <img class="media-cover" src="./assets/images/home/fleet-manager.jpg" alt="Fleet Manager wireframe">
                     </div>
                     <div class="realisation-body">
-                        <span class="realisation-tag">Logistique Wireframe</span>
+                        <span class="realisation-tag label-mono">Logistique Wireframe</span>
                         <h3>Fleet Manager</h3>
                         <p>User flows & wireframes pour l'application de gestion de flotte et tableau de bord.</p>
                     </div>
                 </article>
                 <article class="card flex-col frame realisation-card">
                     <div class="realisation-thumb">
-                        <img src="./assets/images/home/news-app.jpg" alt="News App wireframe">
+                        <img class="media-cover" src="./assets/images/home/news-app.jpg" alt="News App wireframe">
                     </div>
                     <div class="realisation-body">
-                        <span class="realisation-tag">Média Wireframe</span>
+                        <span class="realisation-tag label-mono">Média Wireframe</span>
                         <h3>News App</h3>
                         <p>Sketch & wireframe basse fidélité pour l'application d'actualités africaines.</p>
                     </div>
@@ -222,7 +222,7 @@
                 <div class="testimonials-grid">
                     <figure class="card flex-col dark frame testimonial-card">
                         <span class="testimonial-rating" aria-label="5 étoiles sur 5">★★★★★</span>
-                        <blockquote>« Yidi n'a pas seulement livré des maquettes : ils nous ont aidés à comprendre pourquoi nos utilisateurs abandonnaient avant l'inscription. »</blockquote>
+                        <blockquote>« Leur approche UX research nous a ouvert les yeux sur les vrais besoins de nos utilisateurs. On a repensé tout notre parcours d'inscription et les résultats sont là. »</blockquote>
                         <figcaption>
                             <img class="testimonial-avatar" src="https://randomuser.me/api/portraits/men/54.jpg" alt="" loading="lazy">
                             <div class="testimonial-who flex-col">
@@ -233,12 +233,23 @@
                     </figure>
                     <figure class="card flex-col dark frame testimonial-card">
                         <span class="testimonial-rating" aria-label="5 étoiles sur 5">★★★★★</span>
-                        <blockquote>« Un vrai partenariat. Leur approche UX research a changé notre façon de concevoir nos produits. »</blockquote>
+                        <blockquote>« Des interfaces claires, cohérentes et un vrai souci du détail. Leur UI design a donné une nouvelle identité à nos produits et simplifié leur expérience utilisateur. »</blockquote>
                         <figcaption>
                             <img class="testimonial-avatar" src="https://randomuser.me/api/portraits/women/68.jpg" alt="" loading="lazy">
                             <div class="testimonial-who flex-col">
                                 <strong>Claire Moreau</strong>
                                 <span>Product Manager, Lisanga Edu Paris</span>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="card flex-col dark frame testimonial-card">
+                        <span class="testimonial-rating" aria-label="5 étoiles sur 5">★★★★★</span>
+                        <blockquote>« Leur vision stratégique a aligné notre produit avec notre marché. En six mois, nos indicateurs clés ont doublé. Leur stratégie a redéfini notre place sur le marché. »</blockquote>
+                        <figcaption>
+                            <img class="testimonial-avatar" src="https://randomuser.me/api/portraits/men/45.jpg" alt="" loading="lazy">
+                            <div class="testimonial-who flex-col">
+                                <strong>Michaël Bikinda</strong>
+                                <span>CEO, Kanda Fleet Pointe-Noire</span>
                             </div>
                         </figcaption>
                     </figure>
@@ -256,52 +267,52 @@
                     <h2 class="section-title">Ils nous font confiance.</h2>
                 </header>
                 <div class="partners-grid">
-                    <div class="card flex-col frame partner-logo partner-bg-secondary">
+                    <div class="card flex-col frame partner-logo bg-dot-ink partner-bg-secondary">
                         <span class="frame-mark-tr"></span>
                         <span class="frame-mark-bl"></span>
                         <span class="partner-name flex-col"><strong>Sango Pay</strong><span>Fintech</span></span>
                     </div>
-                    <div class="card flex-col frame partner-logo partner-bg-foreground">
+                    <div class="card flex-col frame partner-logo bg-dot-ink partner-bg-foreground">
                         <span class="frame-mark-tr"></span>
                         <span class="frame-mark-bl"></span>
                         <span class="partner-name flex-col"><strong>Talatala</strong><span>Santé</span></span>
                     </div>
-                    <div class="card flex-col frame partner-logo partner-bg-primary">
+                    <div class="card flex-col frame partner-logo bg-dot-ink partner-bg-primary">
                         <span class="frame-mark-tr"></span>
                         <span class="frame-mark-bl"></span>
                         <span class="partner-name flex-col"><strong>Mbongo</strong><span>Marketplace</span></span>
                     </div>
-                    <div class="card flex-col frame partner-logo partner-bg-secondary">
+                    <div class="card flex-col frame partner-logo bg-dot-ink partner-bg-secondary">
                         <span class="frame-mark-tr"></span>
                         <span class="frame-mark-bl"></span>
                         <span class="partner-name flex-col"><strong>Lisanga Edu</strong><span>Éducation</span></span>
                     </div>
-                    <div class="card flex-col frame partner-logo partner-bg-foreground">
+                    <div class="card flex-col frame partner-logo bg-dot-ink partner-bg-foreground">
                         <span class="frame-mark-tr"></span>
                         <span class="frame-mark-bl"></span>
                         <span class="partner-name flex-col"><strong>Kanda Fleet</strong><span>Logistique</span></span>
                     </div>
-                    <div class="card flex-col frame partner-logo partner-bg-primary">
+                    <div class="card flex-col frame partner-logo bg-dot-ink partner-bg-primary">
                         <span class="frame-mark-tr"></span>
                         <span class="frame-mark-bl"></span>
                         <span class="partner-name flex-col"><strong>Mokili Media</strong><span>Média</span></span>
                     </div>
-                    <div class="card flex-col frame partner-logo partner-bg-secondary">
+                    <div class="card flex-col frame partner-logo bg-dot-ink partner-bg-secondary">
                         <span class="frame-mark-tr"></span>
                         <span class="frame-mark-bl"></span>
                         <span class="partner-name flex-col"><strong>Zamba Agri</strong><span class="partner-tag-primary-deep">Agriculture</span></span>
                     </div>
-                    <div class="card flex-col frame partner-logo partner-bg-primary-deep">
+                    <div class="card flex-col frame partner-logo bg-dot-ink partner-bg-primary-deep">
                         <span class="frame-mark-tr"></span>
                         <span class="frame-mark-bl"></span>
                         <span class="partner-name flex-col"><strong>Nkosi Energy</strong><span>Énergie</span></span>
                     </div>
-                    <div class="card flex-col frame partner-logo partner-bg-foreground">
+                    <div class="card flex-col frame partner-logo bg-dot-ink partner-bg-foreground">
                         <span class="frame-mark-tr"></span>
                         <span class="frame-mark-bl"></span>
                         <span class="partner-name flex-col"><strong>Kintélé Sport</strong><span class="partner-tag-primary-deep">Sport</span></span>
                     </div>
-                    <div class="card flex-col frame partner-logo partner-bg-secondary">
+                    <div class="card flex-col frame partner-logo bg-dot-ink partner-bg-secondary">
                         <span class="frame-mark-tr"></span>
                         <span class="frame-mark-bl"></span>
                         <span class="partner-name flex-col"><strong>Congo Digital</strong><span>Tech</span></span>
@@ -312,11 +323,11 @@
 
         <section class="cta">
             <div class="container">
-                <div class="cta-block frame flex flex-col items-center gap-4 text-center relative">
+                <div class="cta-block bg-dot-paper frame flex flex-col items-center gap-4 text-center relative">
                     <span class="tag tag-signal">06 Prêt à démarrer</span>
                     <h2 class="cta-title">Un projet produit en tête ?</h2>
                     <p class="cta-desc">Parlons-en lors d'un premier échange de 30 minutes, sans engagement.</p>
-                    <a href="contact#form" class="btn btn-lg frame">Lancer votre projet<span class="btn-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
+                    <a href="contact#form" class="btn btn-lg text-base frame">Lancer votre projet<span class="btn-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
                 </div>
             </div>
         </section>
@@ -325,13 +336,13 @@
     <footer class="footer">
         <div class="container footer-grid">
             <div class="footer-brand flex-col">
-                <a href="index.html" class="logo"><span>Yidi</span></a>
+                <a href="" class="logo">Yidi<span>.</span></a>
                 <p>Studio de product design à Brazzaville. UX, UI design et stratégie pour des produits que vos utilisateurs comprennent vraiment.</p>
             </div>
             <div class="footer-col">
                 <h4 class="footer-heading">Navigation</h4>
                 <ul class="footer-list flex-col">
-                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="">Accueil</a></li>
                     <li><a href="services">Services</a></li>
                     <li><a href="contact">Contact</a></li>
                 </ul>
@@ -352,7 +363,7 @@
                 </ul>
             </div>
         </div>
-        <div class="container footer-bottom flex flex-wrap gap-4 justify-between font-mono text-muted text-uppercase">
+        <div class="container footer-bottom flex flex-wrap gap-4 justify-between font-mono text-muted uppercase">
             <p>&copy; 2026 Espoir LOEMBA. Tous droits réservés.</p>
             <p>Product design depuis Brazzaville</p>
         </div>

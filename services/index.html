@@ -14,10 +14,10 @@
 
 <body>
 
-    <header class="header">
-        <div class="header-inner">
+    <header class="header fixed top-0 left-0">
+        <div class="header-inner bg-grid backdrop-blur">
             <a href="../" class="logo">Yidi<span>.</span></a>
-            <a href="#nav" class="nav-burger" aria-label="Menu">
+            <a href="#nav" class="nav-burger cursor-pointer" aria-label="Menu">
                 <span></span><span></span><span></span>
             </a>
             <a href="#" class="nav-close" aria-label="Fermer">
@@ -26,7 +26,7 @@
                 </svg>
             </a>
             <nav id="nav" class="nav" aria-label="Navigation principale">
-                <ul class="nav-list">
+                <ul class="nav-list label-mono">
                     <li><a href="../">Accueil</a></li>
                     <li><a href="../services" aria-current="page">Services</a></li>
                     <li><a href="../contact">Contact</a></li>
@@ -37,7 +37,7 @@
     </header>
 
     <main>
-        <section class="herosection herosection-sm">
+        <section class="herosection herosection-sm overflow-hidden">
             <div class="hero-inner">
                 <div class="hero-grid">
                     <div class="hero-copy flex-col">
@@ -65,8 +65,8 @@
                 </header>
                 <div class="flex-col">
                     <article class="svc-row">
-                        <div class="svc-media">
-                            <img src="../assets/images/services/ux-design.jpg" alt="UX Design">
+                        <div class="svc-media overflow-hidden">
+                            <img class="media-cover" src="../assets/images/services/ux-design.jpg" alt="UX Design">
                         </div>
                         <div class="svc-body flex-col">
                             <span class="service-num">01 UX</span>
@@ -82,8 +82,8 @@
                         </div>
                     </article>
                     <article class="svc-row svc-row-alt">
-                        <div class="svc-media">
-                            <img src="../assets/images/services/ui-design.jpg" alt="UI Design">
+                        <div class="svc-media overflow-hidden">
+                            <img class="media-cover" src="../assets/images/services/ui-design.jpg" alt="UI Design">
                         </div>
                         <div class="svc-body flex-col">
                             <span class="service-num">02 UI</span>
@@ -99,8 +99,8 @@
                         </div>
                     </article>
                     <article class="svc-row">
-                        <div class="svc-media">
-                            <img src="../assets/images/services/strategie-business.jpg" alt="Stratégie Business">
+                        <div class="svc-media overflow-hidden">
+                            <img class="media-cover" src="../assets/images/services/strategie-business.jpg" alt="Stratégie Business">
                         </div>
                         <div class="svc-body flex-col">
                             <span class="service-num">03 SB</span>
@@ -181,11 +181,11 @@
 
         <section class="cta">
             <div class="container">
-                <div class="cta-block frame flex flex-col items-center gap-4 text-center relative">
+                <div class="cta-block bg-dot-paper frame flex flex-col items-center gap-4 text-center relative">
                     <span class="tag tag-signal">04 Prêt à démarrer</span>
                     <h2 class="cta-title">Un projet produit en tête ?</h2>
                     <p class="cta-desc">Parlons-en lors d'un premier échange de 30 minutes, sans engagement.</p>
-                    <a href="../contact" class="btn btn-lg frame">Lancer votre projet<span class="btn-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
+                    <a href="../contact" class="btn btn-lg text-base frame">Lancer votre projet<span class="btn-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
                 </div>
             </div>
         </section>
@@ -194,7 +194,7 @@
     <footer class="footer">
         <div class="container footer-grid">
             <div class="footer-brand flex-col">
-                <a href="../" class="logo"><span>Yidi</span></a>
+                <a href="../" class="logo">Yidi<span>.</span></a>
                 <p>Studio de product design à Brazzaville. UX, UI design et stratégie pour des produits que vos utilisateurs comprennent vraiment.</p>
             </div>
             <div class="footer-col">
@@ -221,7 +221,7 @@
                 </ul>
             </div>
         </div>
-        <div class="container footer-bottom flex flex-wrap gap-4 justify-between font-mono text-muted text-uppercase">
+        <div class="container footer-bottom flex flex-wrap gap-4 justify-between font-mono text-muted uppercase">
             <p>&copy; 2026 Espoir LOEMBA. Tous droits réservés.</p>
             <p>Product design depuis Brazzaville</p>
         </div>
