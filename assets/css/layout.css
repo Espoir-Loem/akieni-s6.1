@@ -73,8 +73,19 @@
     }
   }
 
-  li + li a {
-    border-left: 1px solid var(--border-dark);
+  li {
+    position: relative;
+  }
+
+  li + li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 12px;
+    background-color: var(--border-dark);
   }
 }
 
@@ -456,9 +467,9 @@ body:has(#nav:target) {
     padding-top: var(--spacing-6);
 
     &::before {
-      left: 50%;
+      left: 0;
       top: 0;
-      transform: translateX(-50%);
+      transform: none;
       width: 32px;
       height: 1px;
     }
@@ -511,8 +522,12 @@ body:has(#nav:target) {
       }
     }
 
-    li + li a {
+    li + li {
       border-left: none;
+
+      &::before {
+        display: none;
+      }
     }
   }
 
@@ -557,17 +572,17 @@ body:has(#nav:target) {
   }
 
   .herosection {
-    padding: var(--spacing-10) 0 calc(var(--spacing-10) + 0.5rem);
+    padding: 6rem 0 calc(var(--spacing-12) + 0.5rem);
     min-height: 80dvh;
   }
 
   .herosection-sm {
-    padding: var(--spacing-10) 0 var(--spacing-12);
+    padding: 6rem 0 var(--spacing-12);
     min-height: 30rem;
   }
 
   .hero-inner {
-    padding: var(--spacing-8) var(--spacing-6) 0;
+    padding: var(--spacing-10) var(--spacing-6) 0;
     max-width: var(--container);
   }
 
