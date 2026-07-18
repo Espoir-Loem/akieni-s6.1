@@ -33,7 +33,7 @@
 .section--services {
   position: relative;
   background-color: var(--background-dark);
-  border-top: 1px solid rgba(246,243,236,0.1);
+  border-top: 1px solid var(--paper-alpha-10);
 
   .section__title {
     color: var(--background);
@@ -48,7 +48,7 @@
   }
 
   .card:hover {
-    background-color: rgba(246, 243, 236, 0.03);
+    background-color: var(--paper-alpha-3);
     border-color: var(--primary);
   }
 }
@@ -65,7 +65,7 @@
   flex-direction: column;
   gap: calc(var(--spacing-3) + 0.15rem);
   background-color: var(--background-dark);
-  background-image: radial-gradient(circle, rgba(246, 243, 236, 0.1) 1px, transparent 1px);
+  background-image: radial-gradient(circle, var(--paper-alpha-10) 1px, transparent 1px);
   background-size: 24px 24px;
   border-color: var(--border-dark);
   color: var(--secondary-dim);
@@ -375,7 +375,7 @@
 .testimonials {
   position: relative;
   background-color: var(--background-dark);
-  border-top: 1px solid rgba(246,243,236,0.1);
+  border-top: 1px solid var(--paper-alpha-10);
 
   .section__title {
     color: var(--background);
@@ -386,7 +386,7 @@
   }
 
   .card:hover {
-    background-color: rgba(246, 243, 236, 0.03);
+    background-color: var(--paper-alpha-3);
   }
 }
 
@@ -402,7 +402,7 @@
   flex-direction: column;
   gap: var(--spacing-5);
   background-color: var(--background-dark);
-  background-image: radial-gradient(circle, rgba(246, 243, 236, 0.1) 1px, transparent 1px);
+  background-image: radial-gradient(circle, var(--paper-alpha-10) 1px, transparent 1px);
   background-size: 24px 24px;
   border-color: var(--border-dark);
   color: var(--secondary-dim);
@@ -477,7 +477,7 @@
   height: 120px;
   padding: 0 var(--spacing-5);
   background-color: var(--background);
-  background-image: radial-gradient(circle, rgba(14, 21, 18, 0.06) 1px, transparent 1px);
+  background-image: radial-gradient(circle, var(--ink-alpha-6) 1px, transparent 1px);
   background-size: 24px 24px;
 }
 
