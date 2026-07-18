@@ -1164,69 +1164,62 @@
     color: var(--on-canopy-dim);
   }
 
-  /* ---------- partners ---------- */
-  .partners__grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+  /* ---------- partners / marquee ---------- */
+  .partners {
+    overflow: hidden;
   }
 
-  .partner__logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.7rem;
-    height: 120px;
-    padding: 0 1.4rem;
-    background-color: #ffffff;
-    background-image: radial-gradient(circle, rgba(14, 21, 18, 0.06) 1px, transparent 1px);
-    background-size: 24px 24px;
+  .marquee {
+    width: 100%;
+    overflow: hidden;
+    padding: 2rem 0 3rem;
+    mask-image: linear-gradient(to right, transparent 0%, var(--ink) 5%, var(--ink) 95%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, var(--ink) 5%, var(--ink) 95%, transparent 100%);
   }
 
-  .partner__mark {
-    width: 2.1rem;
-    height: 2.1rem;
-    flex-shrink: 0;
+  .marquee__inner {
     display: flex;
+    gap: 1.5rem;
+    width: max-content;
+    animation: marquee-scroll 30s linear infinite;
+  }
+
+  .marquee__item {
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
-    font-family: var(--font-display);
-    font-weight: 700;
-    font-size: 0.95rem;
-    color: var(--on-signal);
+    gap: 0.6rem;
+    padding: 0.6rem 1.2rem 0.6rem 0.6rem;
     background-color: var(--signal);
-  }
-
-  .partner__logo:nth-child(3n+2) .partner__mark {
-    background-color: var(--canopy);
-    color: var(--paper);
-  }
-
-  .partner__logo:nth-child(3n) .partner__mark {
-    background-color: var(--ink);
-    color: var(--paper);
-  }
-
-  .partner__name {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.25;
-    text-align: center;
-  }
-
-  .partner__name strong {
+    border-radius: 100px;
     font-family: var(--font-display);
     font-size: 0.92rem;
     font-weight: 600;
     color: var(--ink);
+    white-space: nowrap;
   }
 
-  .partner__name span {
-    font-family: var(--font-mono);
-    font-size: 0.65rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--ink-faint);
+  .marquee__item:nth-child(even) {
+    background-color: var(--signal-deep);
+  }
+
+  .marquee__init {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: var(--ink);
+    color: var(--paper);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 0.78rem;
+    flex-shrink: 0;
+  }
+
+  @keyframes marquee-scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
   }
 
   /* ---------- cta ---------- */
@@ -1367,9 +1360,6 @@
       grid-template-columns: repeat(2, 1fr);
     }
 
-    .partners__grid {
-      grid-template-columns: repeat(5, 1fr);
-    }
   }
 
   @media (max-width: 800px) {
@@ -1498,10 +1488,6 @@
   @media (max-width: 540px) {
     .cta__block {
       padding: 2.5rem 1.5rem;
-    }
-
-    .partners__grid {
-      grid-template-columns: repeat(2, 1fr);
     }
 
     .realisations__grid {
