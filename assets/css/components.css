@@ -203,9 +203,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: var(--background);
-  background-image: radial-gradient(circle, var(--ink-alpha-6) 1px, transparent 1px);
-  background-size: 24px 24px;
+  --bg-card: radial-gradient(circle, var(--ink-alpha-6) 1px, transparent 1px) 0 0 / 24px 24px, var(--background);
+  background: var(--bg-card);
   border: 1px solid var(--border);
   transition:
     background-color var(--duration) ease,
@@ -221,8 +220,7 @@
   }
 
   &.dark {
-    background-color: var(--background-dark);
-    background-image: radial-gradient(circle, var(--paper-alpha-10) 1px, transparent 1px);
+    --bg-card: radial-gradient(circle, var(--paper-alpha-10) 1px, transparent 1px) 0 0 / 24px 24px, var(--background-dark);
     border-color: var(--border-dark);
     color: var(--secondary-dim);
   }
