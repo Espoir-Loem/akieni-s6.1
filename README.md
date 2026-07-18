@@ -6,8 +6,8 @@ basé à Brazzaville. Projet 6.1 — HTML5 + CSS3 purs, sans framework.
 ## Pages
 
 - **Accueil** (`index.html`) : Hero, statistiques, méthodologie, services, portfolio, témoignages, partenaires
-- **Services** (`services.html`) : Prestations détaillées (UI Design, UX Research, Design System, Stratégie Produit)
-- **Contact** (`contact.html`) : Formulaire de contact + coordonnées
+- **Services** (`services/`) : Prestations détaillées (UI Design, UX Research, Design System, Stratégie Produit)
+- **Contact** (`contact/`) : Formulaire de contact + coordonnées
 
 ## Design system
 
@@ -17,11 +17,7 @@ basé à Brazzaville. Projet 6.1 — HTML5 + CSS3 purs, sans framework.
 
 ## Lancer en local
 
-Aucune dépendance. Ouvrir `index.html` dans un navigateur ou :
-
-```bash
-python3 -m http.server 8000
-```
+Aucune dépendance. Ouvrir `index.html` dans un navigateur.
 
 ## Déploiement GitHub Pages
 
@@ -32,8 +28,14 @@ python3 -m http.server 8000
 
 ```
 ├── index.html
-├── services.html
-├── contact.html
-├── assets/css/style.css
+├── services/
+│   └── index.html
+├── contact/
+│   └── index.html
+├── assets/
+│   ├── css/style.css
+│   └── images/
+│       ├── home/
+│       └── services/
 └── README.md
 ```
