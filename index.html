@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yidi Studio de Product Design</title>
+    <meta name="description" content="Yidi : UI design, UX research et stratégie produit à Brazzaville.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__inner">
+            <a href="index.html" class="logo">Yidi<span>.</span></a>
+            <a href="#nav" class="nav-burger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </a>
+            <a href="#" class="nav-close" aria-label="Fermer">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <path d="M18 6L6 18M6 6l12 12" />
+                </svg>
+            </a>
+            <nav id="nav" class="nav" aria-label="Navigation principale">
+                <ul class="nav__list">
+                    <li><a href="index.html" aria-current="page">Accueil</a></li>
+                    <li><a href="services">Services</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+                <a href="contact#form" class="btn btn--ghost btn--sm frame">Démarrer un projet<span class="btn__arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="herosection">
+            <img class="hero__bg" src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=1400&q=90" alt="UI UX design">
+            <div class="hero__inner">
+                <div class="hero__grid">
+                    <div class="hero__copy">
+                        <h1>Le design comme <em>preuve</em>, pas comme décor.</h1>
+                        <p class="lead">Du wireframe à l'interface livrée, nous concevons des produits que vos utilisateurs comprennent au premier regard et que vos chiffres confirment.</p>
+                        <div class="hero__actions">
+                            <a href="contact#form" class="btn btn--lg frame">Lancer votre projet<span class="btn__arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
+                        </div>
+                    </div>
+                    <div class="hero__meta">
+                        <span>Discipline<br><strong>UI · UX · Design System</strong></span>
+                        <span>Zone<br><strong>Afrique centrale &amp; au‑delà</strong></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="container">
+                <div class="stats__grid">
+                    <div class="stat">
+                        <span class="stat__num">6 ans</span>
+                        <span class="stat__label">d'expérience en design produit</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__num">30+</span>
+                        <span class="stat__label">produits numériques livrés</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__num">12</span>
+                        <span class="stat__label">secteurs accompagnés en Afrique centrale</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--alt methodology">
+            <div class="container">
+                <header class="section__head">
+                    <div class="eyebrow">
+                        <span class="tag tag--signal">01 Méthode</span>
+                        <span class="rule"></span>
+                    </div>
+                    <h2 class="section__title">Le design comme levier de croissance.</h2>
+                    <p class="section__desc">Pas de décoration digitale. Chaque choix est au service de vos objectifs business. Des interfaces qui convertissent.</p>
+                </header>
+                <div class="methodology__grid">
+                    <article class="card frame methodology__card">
+                        <span class="methodology__num">01 Cadrage</span>
+                        <h3>Stratégie avant le pixel</h3>
+                        <p>On commence par comprendre vos utilisateurs, leurs besoins et vos objectifs. Pas de design sans recherche. Pas d'interface sans stratégie.</p>
+                    </article>
+                    <article class="card frame methodology__card">
+                        <span class="methodology__num">02 Structure</span>
+                        <h3>Design systémique, pas artisanal</h3>
+                        <p>Nous construisons des systèmes de design cohérents composants, tokens, règles d'usage qui permettent d'itérer vite sans casser l'expérience utilisateur.</p>
+                    </article>
+                    <article class="card frame methodology__card">
+                        <span class="methodology__num">03 Validation</span>
+                        <h3>Testé avant d'être livré</h3>
+                        <p>Chaque interface est confrontée à de vrais utilisateurs avant mise en production. On ne livre pas une supposition on livre un produit validé, prêt à performer.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--services">
+            <div class="container">
+                <header class="section__head">
+                    <div class="eyebrow">
+                        <span class="tag tag--signal">02 Prestations</span>
+                        <span class="rule"></span>
+                    </div>
+                    <h2 class="section__title">Ce qu'on fait pour vous.</h2>
+                    <p class="section__desc">Des prestations de product design pensées pour chaque étape de votre projet.</p>
+                </header>
+                <div class="services__grid">
+                    <a href="services" class="card frame service__card">
+                        <span class="service__num">UX</span>
+                        <h3>UX Design</h3>
+                        <p>Comprendre vos utilisateurs avant de concevoir la moindre interface.</p>
+                    </a>
+                    <a href="services" class="card frame service__card">
+                        <span class="service__num">UI</span>
+                        <h3>UI Design</h3>
+                        <p>Interfaces claires, cohérentes et prêtes pour le développement.</p>
+                    </a>
+                    <a href="services" class="card frame service__card">
+                        <span class="service__num">SB</span>
+                        <h3>Stratégie Business</h3>
+                        <p>Alignement produit-marché et vision pour maximiser l'impact.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section realisations">
+            <div class="container">
+                <header class="section__head">
+                    <div class="eyebrow">
+                        <span class="tag tag--signal">03 Portfolio</span>
+                        <span class="rule"></span>
+                    </div>
+                    <h2 class="section__title">Réalisations récentes.</h2>
+                    <p class="section__desc">Du wireframe à la maquette finale découvrez notre processus de design pour chaque projet.</p>
+                </header>
+            </div>
+            <div class="realisations__grid">
+                <article class="card frame realisation__card">
+                    <div class="realisation__thumb">
+                        <img src="https://i.pinimg.com/736x/72/c9/61/72c9617c4e77a7aede5c69a75fa753d6.jpg" alt="Banking App project">
+                    </div>
+                    <div class="realisation__body">
+                        <span class="realisation__tag">Fintech Maquette</span>
+                        <h3>Banking App</h3>
+                        <p>UX research & UI design pour une application bancaire mobile en Afrique centrale.</p>
+                    </div>
+                </article>
+                <article class="card frame realisation__card">
+                    <div class="realisation__thumb">
+                        <img src="https://i.pinimg.com/736x/42/16/e6/4216e6e7657de53ed93f3d184ec911bd.jpg" alt="Marketplace project">
+                    </div>
+                    <div class="realisation__body">
+                        <span class="realisation__tag">E-commerce Maquette</span>
+                        <h3>Marketplace</h3>
+                        <p>Design system complet et refonte UX pour une plateforme de vente en ligne.</p>
+                    </div>
+                </article>
+                <article class="card frame realisation__card">
+                    <div class="realisation__thumb">
+                        <img src="https://i.pinimg.com/736x/09/fc/c8/09fcc8a7fabe176d24a0682d1d6bb1da.jpg" alt="Health Portal project">
+                    </div>
+                    <div class="realisation__body">
+                        <span class="realisation__tag">Santé Maquette</span>
+                        <h3>Health Portal</h3>
+                        <p>Stratégie produit et design d'interface pour un portail de télémédecine.</p>
+                    </div>
+                </article>
+                <article class="card frame realisation__card">
+                    <div class="realisation__thumb">
+                        <img src="https://i.pinimg.com/1200x/78/10/5c/78105cc5ce3400a4f1db803b9be1b519.jpg" alt="Edtech Platform wireframe">
+                    </div>
+                    <div class="realisation__body">
+                        <span class="realisation__tag">Éducation Wireframe</span>
+                        <h3>Edtech Platform</h3>
+                        <p>Architecture d'information & wireframes pour une plateforme d'apprentissage en ligne.</p>
+                    </div>
+                </article>
+                <article class="card frame realisation__card">
+                    <div class="realisation__thumb">
+                        <img src="https://i.pinimg.com/736x/ab/b1/52/abb1521f8c33790bd576afd88e339f7a.jpg" alt="Fleet Manager wireframe">
+                    </div>
+                    <div class="realisation__body">
+                        <span class="realisation__tag">Logistique Wireframe</span>
+                        <h3>Fleet Manager</h3>
+                        <p>User flows & wireframes pour l'application de gestion de flotte et tableau de bord.</p>
+                    </div>
+                </article>
+                <article class="card frame realisation__card">
+                    <div class="realisation__thumb">
+                        <img src="https://i.pinimg.com/1200x/7e/d6/f0/7ed6f0d0475ea529639649755968f2f3.jpg" alt="News App wireframe">
+                    </div>
+                    <div class="realisation__body">
+                        <span class="realisation__tag">Média Wireframe</span>
+                        <h3>News App</h3>
+                        <p>Sketch & wireframe basse fidélité pour l'application d'actualités africaines.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section--alt testimonials">
+            <div class="container">
+                <header class="section__head">
+                    <div class="eyebrow">
+                        <span class="tag tag--signal">04 Retours</span>
+                        <span class="rule"></span>
+                    </div>
+                    <h2 class="section__title">Ce qu'ils disent de nous.</h2>
+                </header>
+                <div class="testimonials__grid">
+                    <figure class="card frame testimonial__card">
+                        <span class="testimonial__rating" aria-label="5 étoiles sur 5">★★★★★</span>
+                        <blockquote>« Yidi n'a pas seulement livré des maquettes : ils nous ont aidés à comprendre pourquoi nos utilisateurs abandonnaient avant l'inscription. »</blockquote>
+                        <figcaption>
+                            <img class="testimonial__avatar" src="https://randomuser.me/api/portraits/men/54.jpg" alt="" loading="lazy">
+                            <div class="testimonial__who">
+                                <strong>Idriss Okemba</strong>
+                                <span>Fondateur, Sango Pay Brazzaville</span>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <figure class="card frame testimonial__card">
+                        <span class="testimonial__rating" aria-label="5 étoiles sur 5">★★★★★</span>
+                        <blockquote>« Un vrai partenariat. Leur approche UX research a changé notre façon de concevoir nos produits. »</blockquote>
+                        <figcaption>
+                            <img class="testimonial__avatar" src="https://randomuser.me/api/portraits/women/68.jpg" alt="" loading="lazy">
+                            <div class="testimonial__who">
+                                <strong>Claire Moreau</strong>
+                                <span>Product Manager, Lisanga Edu Paris</span>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="section partners">
+            <div class="container">
+                <header class="section__head">
+                    <div class="eyebrow">
+                        <span class="tag tag--signal">05 Confiance</span>
+                        <span class="rule"></span>
+                    </div>
+                    <h2 class="section__title">Ils nous font confiance.</h2>
+                </header>
+                <div class="partners__grid">
+                    <div class="card frame partner__logo" style="background-color: #0055ff;">
+                        <span class="partner__mark">SP</span>
+                        <span class="partner__name"><strong style="color: var(--paper);">Sango Pay</strong><span style="color: var(--paper); opacity: 0.7;">Fintech</span></span>
+                    </div>
+                    <div class="card frame partner__logo" style="background-color: #0d9488;">
+                        <span class="partner__mark">TL</span>
+                        <span class="partner__name"><strong style="color: var(--paper);">Talatala</strong><span style="color: var(--paper); opacity: 0.7;">Santé</span></span>
+                    </div>
+                    <div class="card frame partner__logo" style="background-color: #f59e0b;">
+                        <span class="partner__mark">MB</span>
+                        <span class="partner__name"><strong style="color: var(--paper);">Mbongo</strong><span style="color: var(--paper); opacity: 0.7;">Marketplace</span></span>
+                    </div>
+                    <div class="card frame partner__logo" style="background-color: #7c3aed;">
+                        <span class="partner__mark">LE</span>
+                        <span class="partner__name"><strong style="color: var(--paper);">Lisanga Edu</strong><span style="color: var(--paper); opacity: 0.7;">Éducation</span></span>
+                    </div>
+                    <div class="card frame partner__logo" style="background-color: #2563eb;">
+                        <span class="partner__mark">KF</span>
+                        <span class="partner__name"><strong style="color: var(--paper);">Kanda Fleet</strong><span style="color: var(--paper); opacity: 0.7;">Logistique</span></span>
+                    </div>
+                    <div class="card frame partner__logo" style="background-color: #dc2626;">
+                        <span class="partner__mark">MM</span>
+                        <span class="partner__name"><strong style="color: var(--paper);">Mokili Media</strong><span style="color: var(--paper); opacity: 0.7;">Média</span></span>
+                    </div>
+                    <div class="card frame partner__logo" style="background-color: #16a34a;">
+                        <span class="partner__mark">ZA</span>
+                        <span class="partner__name"><strong style="color: var(--paper);">Zamba Agri</strong><span style="color: var(--paper); opacity: 0.7;">Agriculture</span></span>
+                    </div>
+                    <div class="card frame partner__logo" style="background-color: #d97706;">
+                        <span class="partner__mark">NE</span>
+                        <span class="partner__name"><strong style="color: var(--paper);">Nkosi Energy</strong><span style="color: var(--paper); opacity: 0.7;">Énergie</span></span>
+                    </div>
+                    <div class="card frame partner__logo" style="background-color: #0891b2;">
+                        <span class="partner__mark">KS</span>
+                        <span class="partner__name"><strong style="color: var(--paper);">Kintélé Sport</strong><span style="color: var(--paper); opacity: 0.7;">Sport</span></span>
+                    </div>
+                    <div class="card frame partner__logo" style="background-color: #6366f1;">
+                        <span class="partner__mark">CD</span>
+                        <span class="partner__name"><strong style="color: var(--paper);">Congo Digital</strong><span style="color: var(--paper); opacity: 0.7;">Tech</span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <div class="cta__block frame">
+                    <span class="tag tag--signal">06 Prêt à démarrer</span>
+                    <h2 class="cta__title">Un projet produit en tête ?</h2>
+                    <p class="cta__desc">Parlons-en lors d'un premier échange de 30 minutes, sans engagement.</p>
+                    <a href="contact#form" class="btn btn--lg frame">Lancer votre projet<span class="btn__arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__grid">
+            <div class="footer__brand">
+                <a href="index.html" class="logo"><span>Yidi</span></a>
+                <p>Studio de product design à Brazzaville. UX, UI design et stratégie pour des produits que vos utilisateurs comprennent vraiment.</p>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__heading">Navigation</h4>
+                <ul class="footer__list">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services">Services</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__heading">Services</h4>
+                <ul class="footer__list">
+                    <li><a href="services">UX Design</a></li>
+                    <li><a href="services">UI Design</a></li>
+                    <li><a href="services">Stratégie Business</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__heading">Contact</h4>
+                <ul class="footer__list">
+                    <li><a href="contact">Nous écrire</a></li>
+                    <li><a href="contact#form">Démarrer un projet</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer__bottom">
+            <p>&copy; 2026 Yidi Studio. Tous droits réservés.</p>
+            <p>Product design depuis Brazzaville</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+*.bak
+*.copy.*
+style copy.css
+findex.html
+.DS_Store
+Thumbs.db
