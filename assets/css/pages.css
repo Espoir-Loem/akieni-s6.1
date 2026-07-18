@@ -1,21 +1,21 @@
-.methodology__grid,
-.services__grid,
-.testimonials__grid,
-.contact__grid {
+.methodology-grid,
+.services-grid,
+.testimonials-grid,
+.contact-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--spacing-6);
 }
 
-.methodology__card,
-.service__card {
+.methodology-card,
+.service-card {
   padding: calc(var(--spacing-10) + 0.1rem) var(--spacing-8) calc(var(--spacing-8) + 0.2rem);
   display: flex;
   flex-direction: column;
   gap: calc(var(--spacing-3) + 0.15rem);
 }
 
-.methodology__card {
+.methodology-card {
   h3 {
     font-size: 1.2rem;
     color: var(--foreground);
@@ -23,25 +23,25 @@
 
 }
 
-.methodology__num,
-.service__num {
+.methodology-num,
+.service-num {
   font-family: var(--font-mono);
   font-size: 0.75rem;
   letter-spacing: 0.05em;
   display: block;
 }
 
-.methodology__num {
+.methodology-num {
   color: var(--secondary);
 }
 
-.section--services,
+.section-services,
 .testimonials {
   position: relative;
   background-color: var(--background-dark);
   border-top: 1px solid var(--paper-alpha-10);
 
-  .section__title {
+  .section-title {
     color: var(--background);
   }
 
@@ -50,8 +50,8 @@
   }
 }
 
-.section--services {
-  .section__desc {
+.section-services {
+  .section-desc {
     color: var(--secondary-dim);
   }
 
@@ -60,7 +60,7 @@
   }
 }
 
-.service__card {
+.service-card {
   h3 {
     font-size: 1.2rem;
     color: var(--background);
@@ -73,11 +73,11 @@
   }
 }
 
-.service__num {
+.service-num {
   color: var(--primary);
 }
 
-.svc__row {
+.svc-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--spacing-12);
@@ -95,19 +95,19 @@
   }
 }
 
-.svc__row--alt {
-  .svc__media {
+.svc-row--alt {
+  .svc-media {
     grid-column: 2;
     grid-row: 1;
   }
 
-  .svc__body {
+  .svc-body {
     grid-column: 1;
     grid-row: 1;
   }
 }
 
-.svc__media {
+.svc-media {
   height: 400px;
   overflow: hidden;
   position: relative;
@@ -144,7 +144,7 @@
   }
 }
 
-.svc__body {
+.svc-body {
   display: flex;
   flex-direction: column;
   gap: calc(var(--spacing-3) + 0.15rem);
@@ -173,32 +173,32 @@
     }
   }
 
-  .service__num {
+  .service-num {
     color: var(--secondary);
   }
 }
 
-.svc__body li::before {
+.svc-body li::before {
   content: "";
   width: 4px;
   height: 4px;
   flex-shrink: 0;
 }
 
-.methodology__card p,
-.svc__body p {
+.methodology-card p,
+.svc-body p {
   font-size: 0.93rem;
   color: var(--muted);
   line-height: 1.65;
 }
 
-.form__group {
+.form-group {
   display: flex;
   flex-direction: column;
   gap: calc(var(--spacing-1) + 0.15rem);
 }
 
-.form__label {
+.form-label {
   font-family: var(--font-mono);
   font-size: 0.72rem;
   color: var(--secondary-dim);
@@ -206,9 +206,9 @@
   letter-spacing: 0.05em;
 }
 
-.form__input,
-.form__select,
-.form__textarea {
+.form-input,
+.form-select,
+.form-textarea {
   padding: calc(var(--spacing-3) - 0.05rem) var(--spacing-4);
   background: transparent;
   border: 1px solid var(--border-dark);
@@ -223,7 +223,7 @@
   }
 }
 
-.form__select {
+.form-select {
   color: var(--secondary-dim);
   cursor: pointer;
 
@@ -233,17 +233,17 @@
   }
 }
 
-.form__textarea {
+.form-textarea {
   resize: vertical;
   min-height: 100px;
 }
 
-.contact__aside {
+.contact-aside {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-6);
 
-  .service__card {
+  .service-card {
     gap: calc(var(--spacing-2) + 0.1rem);
     padding: 2.3rem;
 
@@ -265,7 +265,7 @@
   }
 }
 
-.realisations__grid {
+.realisations-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--spacing-6);
@@ -275,11 +275,11 @@
   margin-inline: auto;
 }
 
-.realisation__card {
+.realisation-card {
   background-color: var(--background);
 }
 
-.realisation__thumb {
+.realisation-thumb {
   height: 260px;
   overflow: hidden;
   position: relative;
@@ -299,7 +299,7 @@
   }
 }
 
-.realisation__body {
+.realisation-body {
   padding: calc(var(--spacing-5) + 0.35rem) calc(var(--spacing-6) + 0.3rem) var(--spacing-8);
   display: flex;
   flex-direction: column;
@@ -317,7 +317,7 @@
   }
 }
 
-.realisation__tag {
+.realisation-tag {
   font-family: var(--font-mono);
   font-size: 0.7rem;
   letter-spacing: 0.05em;
@@ -325,7 +325,7 @@
   text-transform: uppercase;
 }
 
-.testimonial__card {
+.testimonial-card {
   padding: calc(var(--spacing-10) + 0.1rem) calc(var(--spacing-8) + 0.2rem) calc(var(--spacing-8) + 0.2rem);
   display: flex;
   flex-direction: column;
@@ -350,7 +350,7 @@
   }
 }
 
-.testimonial__rating {
+.testimonial-rating {
   display: flex;
   gap: calc(var(--spacing-1) - 0.05rem);
   color: var(--primary);
@@ -358,7 +358,7 @@
   letter-spacing: 0.1em;
 }
 
-.testimonial__avatar {
+.testimonial-avatar {
   width: 2.9rem;
   height: 2.9rem;
   border-radius: 50%;
@@ -367,7 +367,7 @@
   border: 1px solid var(--border-dark);
 }
 
-.testimonial__who {
+.testimonial-who {
   display: flex;
   flex-direction: column;
   gap: calc(var(--spacing-1) - 0.15rem);
@@ -387,13 +387,13 @@
   }
 }
 
-.partners__grid {
+.partners-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--spacing-4);
 }
 
-.partner__logo {
+.partner-logo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -405,7 +405,7 @@
   background-size: 24px 24px;
 }
 
-.partner__name {
+.partner-name {
   display: flex;
   flex-direction: column;
   line-height: 1.25;
@@ -428,54 +428,54 @@
 }
 
 @media (min-width: 780px) {
-  .methodology__grid {
+  .methodology-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .services__grid {
+  .services-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .realisations__grid {
+  .realisations-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .testimonials__grid {
+  .testimonials-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .partners__grid {
+  .partners-grid {
     grid-template-columns: repeat(5, 1fr);
   }
 
-  .contact__grid {
+  .contact-grid {
     grid-template-columns: 1.5fr 1fr;
     align-items: start;
   }
 
-  .footer__grid {
+  .footer-grid {
     grid-template-columns: 1.4fr repeat(3, 1fr);
   }
 }
 
 @media (max-width: 780px) {
-  .svc__row {
+  .svc-row {
     grid-template-columns: 1fr;
     gap: var(--spacing-6);
     padding: var(--spacing-8) 0;
   }
 
-  .svc__media {
+  .svc-media {
     height: 280px;
   }
 }
 
 @media (max-width: 540px) {
-  .partners__grid {
+  .partners-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .realisations__grid {
+  .realisations-grid {
     padding: 0 0 var(--spacing-8);
   }
 }
